@@ -8,7 +8,7 @@
     h2 {
         color: white;
         font-size: 30px;
-        letter-spacing: 1px;
+        letter-spacing: 2px;
         text-transform: uppercase;
     }
     .events_header_past {
@@ -27,16 +27,17 @@
 }
 
 .future-events {
-    background: #d0d0d0;
+    background: #E0E3DA;
     padding: 10px;
+    padding-top: 30px;
     .future-events_single {
         background-color: white;
-        width: 80vw;
+        width: 90vw;
         height: 15vh;
         display: flex;
         justify-content: space-around;
         align-items: center;
-        margin-bottom: 10px;
+        margin: 0 auto 10px auto;
         .future-events_single_date {
             text-transform: uppercase;
             font-size: 18px;
@@ -58,5 +59,12 @@
 }
 
 .past-events {
-    background-color: #d0d0d0;
+    background-color: #E0E3DA;
+    .past-events_header {
+        font-size: 20px;
+        text-transform: uppercase;
+        text-align: center;
+        padding-top: 20px;
+        letter-spacing: 2px;
+    }
 }
