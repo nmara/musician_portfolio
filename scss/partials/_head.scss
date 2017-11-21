@@ -33,11 +33,8 @@
             font-size: 20px;
             font-weight: 500;
         }
-        a:hover {
-            color: yellow;
-        }
-        a:active {
-            color: yellow;
+        a:hover, a:active {
+            color: yellow; //sprawdź, czy ok
         }
     }
 }
