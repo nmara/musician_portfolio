@@ -1,0 +1,25 @@
+
+.recordings_head {
+    text-transform: uppercase;
+    font-size: 35px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.recordings_main {
+    display: flex;
+    padding-bottom: 30px;
+}
+
+.recordings_main_audio {
+    flex-grow: 2;
+}
+
+.recordings_main_photo {
+    background-image: url("../../images/recordings.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    flex-grow: 1;
+    height: 100vh;
+}
