@@ -14,6 +14,7 @@
     font-size: 30px;
     padding: 50px 0 50px;
     border-bottom: 1px solid #ffaa00;
+    letter-spacing: 2px;
 }
 
 .contact_container_infoDetails {
@@ -28,10 +29,6 @@
         border: none;
         border-bottom: 1px solid #ffaa00;
         height: 6vh;
-    }
-    input[type=email]:focus {
-        border: none;
-        border-bottom: 2px solid #ffaa00;
     }
     input[type=submit] {
         width: 14vw;

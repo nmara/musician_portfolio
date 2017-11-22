@@ -1,24 +1,43 @@
 #gallery {
     background-image: url("../../images/galery-bg.jpg");
     width: 100%;
-    height: 100vh;
+    height: 120vh;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .gallery_head {
+    font-weight: normal;
     text-align: center;
-    font-size: 50px;
-    font-weight: 100;
+    font-size: 30px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    padding-top: 50px;
+    padding: 50px 0 20px;
     color: #fff;//rgb(255,170,0);
+    h2 {
+        //border-bottom: 1px solid #ffaa00;
+    }
 }
 
-.gallery_image {
-    background-image: url("../../images/gallery-1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: (860/3)*1px;
-    height: (960/3)*1px;
+.gallery_content_row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@for $i from 1 through 9 {
+    .gallery_content_row_image-#{$i} {
+        width: 20vw;
+        height: 20vw;
+        background-image: url("../../images/gallery-#{$i}.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 1px solid #ffaa00;
+        transition: width 1s, height 1s;
+        margin: 10px;
+    }
+    .gallery_content_row_image-#{$i}:hover {
+        width: 23vw;
+        height: 23vw;
+    }
 }

@@ -9,7 +9,7 @@
     text-align: center;
     color: #fff;
     font-size: 30px;
-    letter-spacing: 4px;
+    letter-spacing: 3px;
     text-transform: uppercase;
 }
 
@@ -59,8 +59,9 @@
 }
 
 .past-events {
+    padding-bottom: 70px;
     .past-events_header {
-        font-size: 20px;
+        font-size: 25px;
         text-transform: uppercase;
         text-align: center;
         padding-top: 20px;
@@ -120,9 +121,9 @@
             }
         }
     }
-    //.past-events_single:hover {
-    //    height: 35vh;
+    .past-events_single:hover {
+        height: 35vh;
         //dodaj opis: drygent i takie tam
         //button może się też powiększać po najechaniu
-    //}
+    }
 }
