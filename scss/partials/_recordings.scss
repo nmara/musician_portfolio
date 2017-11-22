@@ -1,25 +1,53 @@
+.recordings_main {
+    display: flex;
+    justify-content: center;
+}
 
-.recordings_head {
+.recordings_main_content {
+    width: 65vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.recordings_main_content_head {
     text-transform: uppercase;
     font-size: 35px;
     text-align: center;
     padding-top: 30px;
+    flex-grow: 1;
+    letter-spacing: 2px;
 }
 
-.recordings_main {
-    display: flex;
-    padding-bottom: 30px;
+.recordings_main_content_head h2 {
+    //border-bottom: 1px solid #FFAA00;
 }
 
-.recordings_main_audio {
+.recordings_main_content_audio {
     flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.recordings_main_content_audio_audioFile {
+    padding-bottom: 30px;
+    audio {
+        width: 40vw;
+    }
+}
+
+.recordings_main_content_audio_audioFile h4 {
+    border-bottom: 1px solid #FFAA00;
+    margin-bottom: 10px;
 }
 
 .recordings_main_photo {
     background-image: url("../../images/recordings.jpg");
     background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    flex-grow: 1;
+    background-size: cover;
+    background-position: right;
     height: 100vh;
+    width: 35vw;
 }
