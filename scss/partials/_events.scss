@@ -1,39 +1,26 @@
+#events {
+    background-color: #262626;
+    padding-bottom: 20px;
+}
+
 .events_header {
     margin-top: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(255,170,0); //#274c5e
-    height: 70px;
-    h2 {
-        color: white;
-        font-size: 30px;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-    }
-    .events_header_past {
-        border-radius: 50%;
-        width: 60px;
-        height: 60px;
-        background-color: white;
-        border: 1px solid white;
-        a {
-            text-decoration: none;
-            color: rgb(255,170,0);
-            font-weight: 700;
-            font-size: 20px;
-        }
-    }
+    padding-top: 20px;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
 }
 
 .future-events {
-    background: #E0E3DA;
     padding: 10px;
     padding-top: 30px;
     .future-events_single {
         background-color: white;
-        width: 85vw;
-        height: 15vh;
+        color: #262626;
+        width: 70vw;
+        height: 25vh;
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -47,53 +34,59 @@
         .future-events_single_title {
             text-transform: uppercase;
             font-size: 18px;
-            width: 45%;
+            width: 50%;
             .bold {
                 font-weight: 700;
             }
         }
         .future-events_single_place {
-            width: 30%;
-            a {
-                text-decoration: none;
-                font-weight: 700;
-                color: black;
-                font-size: 18px;
+            width: 25%;
+            .future-events_single_place_button {
+                background-color: rgb(255,170,0);
+                border: 1px solid rgb(255,170,0);
+                width: 115px;
+                height: 24px;
+                a {
+                    text-decoration: none;
+                    font-weight: 700;
+                    color: #fff;
+                    font-size: 17px;
+                    padding: 2px 9px;
+                }
             }
         }
     }
 }
 
 .past-events {
-    background-color: #E0E3DA;
     .past-events_header {
         font-size: 20px;
         text-transform: uppercase;
         text-align: center;
         padding-top: 20px;
         letter-spacing: 2px;
+        color: #fff;
         .past-events_header_year {
             background-color: rgb(255,170,0);
             width: 80px;
-            height: 80px;
-            border-radius: 50%;
+            height: 50px;
             display: flex;
             align-items: center;
             justify-content: center;
             padding: 0;
-            margin-left: 81px;
-            margin-bottom: 8px;
-            color: white;
+            margin-left: 171px;
+            color: #fff;
         }
     }
     .past-events_single {
         background-color: white;
-        width: 85vw;
-        height: 15vh;
+        color: #262626;
+        width: 70vw;
+        height: 25vh;
         display: flex;
         justify-content: space-around;
         align-items: center;
-        margin: 0 auto 20px auto;
+        margin: 0 auto 10px auto;
         .past-events_single_date {
             text-transform: uppercase;
             font-size: 18px;
@@ -103,19 +96,33 @@
         .past-events_single_title {
             text-transform: uppercase;
             font-size: 18px;
-            width: 45%;
+            width: 50%;
             .bold {
                 font-weight: 700;
             }
         }
         .past-events_single_place {
-            width: 30%;
-            a {
-                text-decoration: none;
-                font-weight: 700;
-                color: black;
-                font-size: 18px;
+            width: 25%;
+            height: 100%;
+            background-color: rgb(255,170,0);
+            .past-events_single_place_button {
+                background-color: rgb(255,170,0);
+                border: 1px solid rgb(255,170,0);
+                //width: 150px;
+                //height: 30px;
+                a {
+                    text-decoration: none;
+                    font-weight: 700;
+                    color: #fff;
+                    font-size: 17px;
+                    padding: 2px 9px;
+                }
             }
         }
+    }
+    .past-events_single:hover {
+        height: 35vh;
+        //dodaj opis: drygent i takie tam
+        //button może się też powiększać po najechaniu
     }
 }

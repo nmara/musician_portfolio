@@ -33,11 +33,11 @@
             font-size: 22px;
             font-weight: 500;
         }
-        a:hover, a:active {
-            color: rgb(255,170,0); //sprawdź, czy ok #17453e, #001E2D
+        a.active { //normalny active nie działa, to poglądowo
+            color: rgb(255,170,0);     // #17453e Nie działa :(((())))
         }
-        a:active {
-            color: #17453e;     //sprawdź, czy ok #17453e, #001E2D
+        a:hover {
+            color: rgb(255,170,0);
         }
     }
 }
