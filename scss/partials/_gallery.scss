@@ -1,20 +1,22 @@
 #gallery {
-    background-image: url("../../images/galery-bg.jpg");
+    background-image: url("../images/galery-bg.jpg");
     width: 100%;
-    height: 140vh;
+    height: 150vh;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .gallery_head {
     font-weight: normal;
-    text-align: center;
-    font-size: 30px;
+    font-size: 32px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    padding: 50px 0 20px;
-    color: #fff;//rgb(255,170,0);
+    padding: 55px 0 20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     h2 {
-        //border-bottom: 1px solid #ffaa00;
+        border-bottom: 1px solid #ffaa00;
     }
 }
 
@@ -24,15 +26,15 @@
     align-items: center;
 }
 
-@for $i from 1 through 9 {
+@for $i from 1 through 8 {
     .gallery_content_row_image-#{$i} {
         width: 19vw;
         height: 25vw;
-        background-image: url("../../images/gallery-#{$i}.jpg");
+        background-image: url("../images/gallery-#{$i}.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        border: 1px solid #ffaa00; //Może ramki do zmiany
+        border: 1px solid #363636; //Może ramki do zmiany
         transition: width 1s, height 1s;
         margin: 10px;
     }
@@ -47,124 +49,116 @@
 }
 
 .modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-  overflow: auto;
-  background: url("images/");
-  justify-content: center;
-  align-items: center;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    background-image: url("../images/galery-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Modal Content */
 .modal_content {
-  position: relative;
-  background-color: #000;
-  padding: 0;
-  max-height: 90vh;
-  max-width: 90vw;
+    position: relative;
+    background-color: #000;
+    padding: 0;
+    max-height: 93vh;
+    max-width: 90vw;
+    border: 1px solid #363636;
+}
+
+.description {
+    display: none;
 }
 
 /* The Close Button */
 .close {
-  color: white;
-  position: absolute;
-  top: 10px;
-  right: 25px;
-  font-size: 35px;
-  font-weight: bold;
+    color: #ffaa00;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
 }
 
 .close:hover,
 .close:focus {
-  color: #999;
-  text-decoration: none;
-  cursor: pointer;
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .mySlides {
-  display: none;
+    display: none;
 }
 
 .cursor {
-  cursor: pointer
+    cursor: pointer
 }
 
 /* Next & previous buttons */
 .prev,
 .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: #ffaa00;
-  font-weight: bold;
-  font-size: 20px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
 }
 
 /* Position the "next button" to the right */
 .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+    right: 0;
+    border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Number text (1/3 etc) */
 .numbertext {
-  color: #ffaa00;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
+    color: #fff;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
 }
 
 img {
-  margin-bottom: -4px;
-  max-width: 90vw;
-  max-height: 80vh;
-  //border: 1px solid #ffaa00;
+    max-width: 80vw;
+    max-height: 80vh;
 }
 
 .caption_container {
-  text-align: center;
-  background-color: black;
-  opacity: 0.5;
-  padding: 2px 16px;
-  color: white;
-  position: absolute;
-  bottom: -10%;
-  width: 100%;
-  height: 10%;
-}
-
-.demo {
-  opacity: 0.6;
-}
-
-.active,
-.demo:hover {
-  opacity: 1;
-}
-
-img.hover-shadow {
-  transition: 0.3s
-}
-
-.hover-shadow:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+    background-color: black;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+        border-bottom: 0.5px solid #ffaa00;
+    }
 }

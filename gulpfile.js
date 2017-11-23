@@ -1,7 +1,7 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass');
 const sourcemaps = require('gulp-sourcemaps');
-const autoprefixer = require('gulp-autoprefixer');
+//const autoprefixer = require('gulp-autoprefixer');
 const browserSync = require('browser-sync').create();
 const plumber = require('gulp-plumber');
 const gutil = require('gulp-util');
@@ -29,7 +29,7 @@ gulp.task('sass', function () {
         }))
         .pipe(sourcemaps.init())
         .pipe(sass({
-            outputStyle: 'compressed' //nested, expanded, compact, compressed
+            outputStyle: 'nested' //nested, expanded, compact, compressed
         }))
         /*.pipe(autoprefixer({
             browsers: ['last 2 versions'],
