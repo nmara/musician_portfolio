@@ -35,12 +35,54 @@
         background-repeat: no-repeat;
         background-size: cover;
         border: 1px solid #363636; //Może ramki do zmiany
-        transition: width 1s, height 1s;
+        transition: width 0.5s, height 0.5s;
         margin: 10px;
+        .description_background, .description_content {
+            display: none;
+        }
     }
     .gallery_content_row_image-#{$i}:hover {
         width: 23vw;
         height: 23vw;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        cursor: pointer; //wybierz potem fajny
+
+        .description_background {
+            background-color: black;
+            opacity: 0.6;
+            width: 100%;
+            height: 10vh;
+            display: block;
+        }
+
+        div.white { //totalna próba do konsultacji
+            background-color: white;
+            opacity: 0.05;
+            width: 100%;
+            height: 10vh;
+            display: block;
+        }
+
+        .description_content {
+            z-index: 22;
+            position: absolute;
+            color: #fff;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            width: 100%;
+            height: 10vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            p.title {
+                border-bottom: 0.25px solid #ffaa00;
+                text-align: center;
+            }
+        }
     }
 }
 
@@ -159,6 +201,6 @@ img {
     justify-content: center;
     align-items: center;
     p {
-        border-bottom: 0.5px solid #ffaa00;
+        border-bottom: 0.25px solid #ffaa00;
     }
 }
