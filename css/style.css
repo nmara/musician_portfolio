@@ -88,16 +88,16 @@
     .future-events .future-events_single .future-events_single_date {
       text-transform: uppercase;
       font-size: 18px;
-      width: 25%;
+      width: 22.5%;
       margin-left: 15px; }
     .future-events .future-events_single .future-events_single_title {
       text-transform: uppercase;
       font-size: 18px;
-      width: 50%; }
+      width: 55%; }
       .future-events .future-events_single .future-events_single_title .bold {
         font-weight: 700; }
     .future-events .future-events_single .future-events_single_place {
-      width: 25%; }
+      width: 22.5%; }
       .future-events .future-events_single .future-events_single_place .future-events_single_place_button {
         background-color: #ffaa00;
         border: 1px solid #ffaa00;
@@ -116,20 +116,24 @@
     font-size: 25px;
     text-transform: uppercase;
     text-align: center;
-    padding-top: 20px;
+    padding: 20px 0 50px;
     letter-spacing: 2px;
     color: #fff; }
-    .past-events .past-events_header .past-events_header_year {
-      background-color: #ffaa00;
-      width: 80px;
-      height: 50px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 0;
-      margin-left: 171px;
-      color: #fff; }
+  .past-events .past-events_header_year {
+    background-color: #ffaa00;
+    width: 80px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    color: #fff;
+    position: absolute;
+    top: -50px;
+    left: 0;
+    font-size: 20px; }
   .past-events .past-events_single {
+    position: relative;
     background-color: white;
     color: #262626;
     width: 70vw;
@@ -137,33 +141,60 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 0 auto 10px auto; }
+    margin: 0 auto 10px auto;
+    transition: height 0.6s ease;
+    transition-delay: 0.3s; }
     .past-events .past-events_single .past-events_single_date {
       text-transform: uppercase;
       font-size: 18px;
-      width: 25%;
+      width: 22.5%;
       margin-left: 15px; }
     .past-events .past-events_single .past-events_single_title {
       text-transform: uppercase;
       font-size: 18px;
-      width: 50%; }
+      width: 55%; }
       .past-events .past-events_single .past-events_single_title .bold {
         font-weight: 700; }
+      .past-events .past-events_single .past-events_single_title .delay {
+        font-size: 0.25px;
+        color: #fff;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s, opacity 0.5s ease-in-out;
+        transition-delay: 0.5s; }
     .past-events .past-events_single .past-events_single_place {
-      width: 25%;
+      width: 22.5%;
       height: 100%;
-      background-color: #ffaa00; }
+      background-color: #ffaa00;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
       .past-events .past-events_single .past-events_single_place .past-events_single_place_button {
         background-color: #ffaa00;
-        border: 1px solid #ffaa00; }
+        border: 3px solid #fff;
+        width: 80%;
+        cursor: pointer; }
         .past-events .past-events_single .past-events_single_place .past-events_single_place_button a {
           text-decoration: none;
-          font-weight: 700;
+          font-weight: bold;
           color: #fff;
-          font-size: 17px;
-          padding: 2px 9px; }
+          font-size: 35px;
+          text-transform: uppercase; }
+  .past-events .past-events_single_place_button:hover a {
+    font-size: 53px; }
   .past-events .past-events_single:hover {
     height: 35vh; }
+    .past-events .past-events_single:hover .delay {
+      font-size: 16px;
+      visibility: visible;
+      opacity: 1;
+      color: #363636;
+      margin-top: 10px;
+      border-bottom: 1px solid #363636;
+      border-top: 1px solid #363636;
+      width: 70%; }
+      .past-events .past-events_single:hover .delay .bold {
+        font-weight: 600; }
 
 .recordings_main {
   display: flex;
@@ -242,6 +273,7 @@
   background-size: cover;
   border: 1px solid #363636;
   transition: width 0.5s, height 0.5s;
+  transition-delay: 0.1s;
   margin: 10px; }
   .gallery_content_row_image-1 .description_background, .gallery_content_row_image-1 .description_content {
     display: none; }
@@ -256,12 +288,6 @@
   .gallery_content_row_image-1:hover .description_background {
     background-color: black;
     opacity: 0.6;
-    width: 100%;
-    height: 10vh;
-    display: block; }
-  .gallery_content_row_image-1:hover div.white {
-    background-color: white;
-    opacity: 0.05;
     width: 100%;
     height: 10vh;
     display: block; }
@@ -291,6 +317,7 @@
   background-size: cover;
   border: 1px solid #363636;
   transition: width 0.5s, height 0.5s;
+  transition-delay: 0.1s;
   margin: 10px; }
   .gallery_content_row_image-2 .description_background, .gallery_content_row_image-2 .description_content {
     display: none; }
@@ -305,12 +332,6 @@
   .gallery_content_row_image-2:hover .description_background {
     background-color: black;
     opacity: 0.6;
-    width: 100%;
-    height: 10vh;
-    display: block; }
-  .gallery_content_row_image-2:hover div.white {
-    background-color: white;
-    opacity: 0.05;
     width: 100%;
     height: 10vh;
     display: block; }
@@ -340,6 +361,7 @@
   background-size: cover;
   border: 1px solid #363636;
   transition: width 0.5s, height 0.5s;
+  transition-delay: 0.1s;
   margin: 10px; }
   .gallery_content_row_image-3 .description_background, .gallery_content_row_image-3 .description_content {
     display: none; }
@@ -354,12 +376,6 @@
   .gallery_content_row_image-3:hover .description_background {
     background-color: black;
     opacity: 0.6;
-    width: 100%;
-    height: 10vh;
-    display: block; }
-  .gallery_content_row_image-3:hover div.white {
-    background-color: white;
-    opacity: 0.05;
     width: 100%;
     height: 10vh;
     display: block; }
@@ -389,6 +405,7 @@
   background-size: cover;
   border: 1px solid #363636;
   transition: width 0.5s, height 0.5s;
+  transition-delay: 0.1s;
   margin: 10px; }
   .gallery_content_row_image-4 .description_background, .gallery_content_row_image-4 .description_content {
     display: none; }
@@ -403,12 +420,6 @@
   .gallery_content_row_image-4:hover .description_background {
     background-color: black;
     opacity: 0.6;
-    width: 100%;
-    height: 10vh;
-    display: block; }
-  .gallery_content_row_image-4:hover div.white {
-    background-color: white;
-    opacity: 0.05;
     width: 100%;
     height: 10vh;
     display: block; }
@@ -438,6 +449,7 @@
   background-size: cover;
   border: 1px solid #363636;
   transition: width 0.5s, height 0.5s;
+  transition-delay: 0.1s;
   margin: 10px; }
   .gallery_content_row_image-5 .description_background, .gallery_content_row_image-5 .description_content {
     display: none; }
@@ -452,12 +464,6 @@
   .gallery_content_row_image-5:hover .description_background {
     background-color: black;
     opacity: 0.6;
-    width: 100%;
-    height: 10vh;
-    display: block; }
-  .gallery_content_row_image-5:hover div.white {
-    background-color: white;
-    opacity: 0.05;
     width: 100%;
     height: 10vh;
     display: block; }
@@ -487,6 +493,7 @@
   background-size: cover;
   border: 1px solid #363636;
   transition: width 0.5s, height 0.5s;
+  transition-delay: 0.1s;
   margin: 10px; }
   .gallery_content_row_image-6 .description_background, .gallery_content_row_image-6 .description_content {
     display: none; }
@@ -501,12 +508,6 @@
   .gallery_content_row_image-6:hover .description_background {
     background-color: black;
     opacity: 0.6;
-    width: 100%;
-    height: 10vh;
-    display: block; }
-  .gallery_content_row_image-6:hover div.white {
-    background-color: white;
-    opacity: 0.05;
     width: 100%;
     height: 10vh;
     display: block; }
@@ -536,6 +537,7 @@
   background-size: cover;
   border: 1px solid #363636;
   transition: width 0.5s, height 0.5s;
+  transition-delay: 0.1s;
   margin: 10px; }
   .gallery_content_row_image-7 .description_background, .gallery_content_row_image-7 .description_content {
     display: none; }
@@ -550,12 +552,6 @@
   .gallery_content_row_image-7:hover .description_background {
     background-color: black;
     opacity: 0.6;
-    width: 100%;
-    height: 10vh;
-    display: block; }
-  .gallery_content_row_image-7:hover div.white {
-    background-color: white;
-    opacity: 0.05;
     width: 100%;
     height: 10vh;
     display: block; }
@@ -585,6 +581,7 @@
   background-size: cover;
   border: 1px solid #363636;
   transition: width 0.5s, height 0.5s;
+  transition-delay: 0.1s;
   margin: 10px; }
   .gallery_content_row_image-8 .description_background, .gallery_content_row_image-8 .description_content {
     display: none; }
@@ -599,12 +596,6 @@
   .gallery_content_row_image-8:hover .description_background {
     background-color: black;
     opacity: 0.6;
-    width: 100%;
-    height: 10vh;
-    display: block; }
-  .gallery_content_row_image-8:hover div.white {
-    background-color: white;
-    opacity: 0.05;
     width: 100%;
     height: 10vh;
     display: block; }
@@ -737,26 +728,36 @@ img {
   text-align: center;
   font-size: 17px;
   border: 1px solid #ffaa00;
-  height: 80vh; }
+  height: 87vh; }
 
 .contact_container_header {
   text-transform: uppercase;
   font-size: 30px;
-  padding: 50px 0 50px;
+  padding: 40px 0 40px;
   border-bottom: 1px solid #ffaa00;
   letter-spacing: 2px; }
 
 .contact_container_infoDetails {
-  margin: 20px;
-  padding: 8px; }
+  margin: 20px 0 10px;
+  padding: 8px;
+  font-size: 18px;
+  font-weight: lighter; }
 
 .contact_container_form {
   text-align: center; }
+  .contact_container_form p {
+    font-size: 16px;
+    margin: 10px 0 35px; }
   .contact_container_form input[type=email] {
     width: 30vw;
     border: none;
     border-bottom: 1px solid #ffaa00;
-    height: 6vh; }
+    height: 6vh;
+    outline: 0;
+    font-size: 16px;
+    font-family: inherit;
+    line-height: 16px;
+    text-align: center; }
   .contact_container_form input[type=submit] {
     width: 14vw;
     height: 6vh;
@@ -767,6 +768,14 @@ img {
     margin-top: 20px;
     letter-spacing: 2px;
     font-size: 17px; }
+  .contact_container_form input[type=submit]:hover {
+    border: 2px solid #ffaa00;
+    cursor: pointer; }
+  .contact_container_form input::placeholder {
+    color: #ffaa00;
+    opacity: 0.7;
+    text-align: center;
+    font-family: inherit; }
 
 .footer_container {
   background: black;

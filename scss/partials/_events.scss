@@ -28,19 +28,19 @@
         .future-events_single_date {
             text-transform: uppercase;
             font-size: 18px;
-            width: 25%;
+            width: 22.5%;
             margin-left: 15px;
         }
         .future-events_single_title {
             text-transform: uppercase;
             font-size: 18px;
-            width: 50%;
+            width: 55%;
             .bold {
                 font-weight: 700;
             }
         }
         .future-events_single_place {
-            width: 25%;
+            width: 22.5%;
             .future-events_single_place_button {
                 background-color: rgb(255,170,0);
                 border: 1px solid rgb(255,170,0);
@@ -64,22 +64,28 @@
         font-size: 25px;
         text-transform: uppercase;
         text-align: center;
-        padding-top: 20px;
+        padding: 20px 0 50px;;
         letter-spacing: 2px;
         color: #fff;
-        .past-events_header_year {
-            background-color: rgb(255,170,0);
-            width: 80px;
-            height: 50px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 0;
-            margin-left: 171px;
-            color: #fff;
-        }
     }
+
+    .past-events_header_year {
+        background-color: rgb(255,170,0);
+        width: 80px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        color: #fff;
+        position: absolute;
+        top:-50px;
+        left: 0;
+        font-size: 20px;
+    }
+
     .past-events_single {
+        position: relative;
         background-color: white;
         color: #262626;
         width: 70vw;
@@ -88,42 +94,76 @@
         justify-content: space-around;
         align-items: center;
         margin: 0 auto 10px auto;
+        transition: height 0.6s ease;
+        transition-delay: 0.3s;
         .past-events_single_date {
             text-transform: uppercase;
             font-size: 18px;
-            width: 25%;
+            width: 22.5%;
             margin-left: 15px;
         }
         .past-events_single_title {
             text-transform: uppercase;
             font-size: 18px;
-            width: 50%;
+            width: 55%;
             .bold {
                 font-weight: 700;
             }
+            .delay {
+                font-size: 0.25px;
+                color: #fff;
+                visibility: hidden;
+                opacity: 0;
+                transition: visibility 0s, opacity 0.5s ease-in-out;
+                transition-delay: 0.5s;
+            }
         }
         .past-events_single_place {
-            width: 25%;
+            width: 22.5%;
             height: 100%;
             background-color: rgb(255,170,0);
+            display: flex;
+            align-items: center;
+            justify-content: center;
             .past-events_single_place_button {
                 background-color: rgb(255,170,0);
-                border: 1px solid rgb(255,170,0);
-                //width: 150px;
-                //height: 30px;
+                border: 3px solid #fff;
+                width: 80%;
+                cursor: pointer;
+                //font-weight: normal;
+                //margin-right: 17px;
                 a {
                     text-decoration: none;
-                    font-weight: 700;
+                    font-weight: bold;
                     color: #fff;
-                    font-size: 17px;
-                    padding: 2px 9px;
+                    font-size: 35px;
+                    text-transform: uppercase;
+                    //padding: 2px 9px;
                 }
             }
         }
     }
+
+    .past-events_single_place_button:hover {
+        a {
+            font-size: 53px;
+        }
+    }
+
     .past-events_single:hover {
         height: 35vh;
-        //dodaj opis: drygent i takie tam
-        //button może się też powiększać po najechaniu
+        .delay {
+            font-size: 16px;
+            visibility: visible;
+            opacity: 1;
+            color: #363636;
+            margin-top: 10px;
+            border-bottom: 1px solid #363636;
+            border-top: 1px solid #363636;
+            width: 70%;
+            .bold {
+                font-weight: 600;
+            }
+        }
     }
 }
