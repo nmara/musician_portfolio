@@ -101,14 +101,14 @@
       .future-events .future-events_single .future-events_single_place .future-events_single_place_button {
         background-color: #ffaa00;
         border: 1px solid #ffaa00;
-        width: 115px;
-        height: 24px; }
+        width: 140px;
+        height: 30px; }
         .future-events .future-events_single .future-events_single_place .future-events_single_place_button a {
           text-decoration: none;
           font-weight: 700;
           color: #fff;
           font-size: 17px;
-          padding: 2px 9px; }
+          padding: 2px 20px; }
 
 .past-events {
   padding-bottom: 70px; }
@@ -168,7 +168,8 @@
       background-color: #ffaa00;
       display: flex;
       align-items: center;
-      justify-content: center; }
+      justify-content: center;
+      color: #fff; }
       .past-events .past-events_single .past-events_single_place .past-events_single_place_button {
         background-color: #ffaa00;
         border: 3px solid #fff;
@@ -179,9 +180,8 @@
           font-weight: bold;
           color: #fff;
           font-size: 35px;
-          text-transform: uppercase; }
-  .past-events .past-events_single_place_button:hover a {
-    font-size: 53px; }
+          text-transform: uppercase;
+          padding: 10px 50px; }
   .past-events .past-events_single:hover {
     height: 35vh; }
     .past-events .past-events_single:hover .delay {

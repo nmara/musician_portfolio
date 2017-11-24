@@ -44,14 +44,14 @@
             .future-events_single_place_button {
                 background-color: rgb(255,170,0);
                 border: 1px solid rgb(255,170,0);
-                width: 115px;
-                height: 24px;
+                width: 140px;
+                height: 30px;
                 a {
                     text-decoration: none;
                     font-weight: 700;
                     color: #fff;
                     font-size: 17px;
-                    padding: 2px 9px;
+                    padding: 2px 20px;
                 }
             }
         }
@@ -125,28 +125,22 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            //flex-direction: column;
+            color: #fff;
             .past-events_single_place_button {
                 background-color: rgb(255,170,0);
                 border: 3px solid #fff;
                 width: 80%;
                 cursor: pointer;
-                //font-weight: normal;
-                //margin-right: 17px;
                 a {
                     text-decoration: none;
                     font-weight: bold;
                     color: #fff;
                     font-size: 35px;
                     text-transform: uppercase;
-                    //padding: 2px 9px;
+                    padding: 10px 50px;
                 }
             }
-        }
-    }
-
-    .past-events_single_place_button:hover {
-        a {
-            font-size: 53px;
         }
     }
 
