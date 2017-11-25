@@ -1,35 +1,39 @@
 #gallery {
     background-image: url("../images/galery-bg.jpg");
     width: 100%;
-    height: 150vh;
+    height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 }
 .gallery_head {
     font-weight: normal;
-    font-size: 32px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    padding: 55px 0 20px;
+    padding: 55px 0 0px;
     color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
     h2 {
         border-bottom: 1px solid #ffaa00;
+        font-size: 40px;
     }
 }
 
 .gallery_content_row {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    padding: 60px;
 }
 
 @for $i from 1 through 8 {
     .gallery_content_row_image-#{$i} {
-        width: 19vw;
-        height: 25vw;
+        width: 250px;
+        height: 325px;
         background-image: url("../images/gallery-#{$i}.jpg");
         background-position: center;
         background-repeat: no-repeat;
@@ -43,8 +47,8 @@
         }
     }
     .gallery_content_row_image-#{$i}:hover {
-        width: 23vw;
-        height: 23vw;
+        width: 290px;
+        height: 290px;
         display: flex;
         justify-content: center;
         align-items: flex-end;
@@ -62,7 +66,6 @@
             z-index: 22;
             position: absolute;
             color: #fff;
-            font-size: 14px;
             text-transform: uppercase;
             letter-spacing: 2px;
             width: 100%;
@@ -71,6 +74,9 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
+            p {
+                font-size: 14px;
+            }
             p.title {
                 border-bottom: 0.25px solid #ffaa00; //może za dużo żółtego i bez?
                 text-align: center;

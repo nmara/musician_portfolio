@@ -13,12 +13,14 @@
 
 .recordings_main_content_head {
     text-transform: uppercase;
-    font-size: 32px;
     font-weight: bold;
     text-align: center;
     padding-top: 30px;
     flex-grow: 1;
     letter-spacing: 2px;
+    h2 {
+        font-size: (44/16) * 1rem;
+    }
 
 }
 
@@ -48,4 +50,10 @@
     background-position: right;
     height: 100vh;
     width: 35vw;
+}
+
+@media only screen and (max-width: 850px) {
+    .recordings_main_photo {
+        display: none;
+    }
 }

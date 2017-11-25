@@ -4,34 +4,37 @@
     justify-content: flex-start;
     align-items: center;
     text-align: center;
-    font-size: 17px;
     border: 1px solid #ffaa00;
     height: 87vh;
 }
 
 .contact_container_header {
     text-transform: uppercase;
-    font-size: 30px;
     padding: 40px 0 40px;
     border-bottom: 1px solid #ffaa00;
     letter-spacing: 2px;
+    h2 {
+        font-size: 40px;
+    }
 }
 
 .contact_container_infoDetails {
     margin: 20px 0 10px;
     padding: 8px;
-    font-size: 18px;
     font-weight: lighter;
+    p {
+        font-size: 18px;
+    }
 }
 
 .contact_container_form {
     text-align: center;
     p {
         font-size: 16px;
-        margin: 10px 0 35px;;
+        margin: 10px 8px 35px;;
     }
     input[type=email] {
-        width: 30vw;
+        width: 90%;
         border: none;
         border-bottom: 1px solid #ffaa00;
         height: 6vh;
@@ -43,8 +46,8 @@
     }
 
     input[type=submit] {
-        width: 14vw;
-        height: 6vh;
+        width: 150px;
+        height: 35px;
         background: #fff;
         border: 1px solid #ffaa00;
         border-radius: 2px;
