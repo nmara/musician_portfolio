@@ -1,3 +1,10 @@
+var navIcon1 = document.getElementById("nav-icon1");
+var navMenuBar = document.getElementById("nav-menu-bar");
+navIcon1.addEventListener("click", function() {
+    this.classList.toggle("open");
+    navMenuBar.classList.toggle("nav_menu_bar_visible");
+})
+
 function openModal() {
   document.getElementById('myModal').style.display = "flex";
 }
