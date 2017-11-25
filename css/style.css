@@ -41,7 +41,7 @@
 #nav-icon1 span {
   display: block;
   position: absolute;
-  height: 7px;
+  height: 5px;
   width: 100%;
   background: #ffaa00;
   border-radius: 9px;
@@ -136,7 +136,7 @@
 
 @media only screen and (max-width: 1024px) {
   #home {
-    height: 85vh; } }
+    height: 66vh; } }
 
 .about_bio h1 {
   text-transform: uppercase;
@@ -281,7 +281,7 @@
           .past-events .past-events_single .medium .past-events_single_title .delay p {
             font-size: 0.25px; }
     .past-events .past-events_single .past-events_single_place {
-      width: 22.5%;
+      width: 23%;
       height: 100%;
       background-color: #ffaa00;
       display: flex;
@@ -341,7 +341,7 @@
     .past-events .past-events_single .medium {
       display: flex;
       flex-direction: column;
-      flex-grow: 4;
+      width: 70%;
       padding: 0;
       margin: 0;
       padding-left: 35px; }
@@ -358,7 +358,12 @@
           padding: 0;
           margin: 0; }
     .past-events .past-events_single .past-events_single_place {
-      flex-grow: 1; } }
+      width: 30%; }
+  .past-events .past-events_single:hover {
+    height: 40vh; }
+    .past-events .past-events_single:hover .past-events_single_place {
+      height: 100%;
+      background-color: #ffaa00; } }
 
 @media only screen and (max-width: 680px) {
   .future-events .future-events_single {
@@ -388,10 +393,14 @@
         .future-events .future-events_single .medium .future-events_single_title p {
           padding: 0;
           margin: 0; }
+  .past-events .past-events_header {
+    padding-bottom: 65px; }
+    .past-events .past-events_header h2 {
+      font-size: 35px; }
   .past-events .past-events_single {
     flex-direction: column;
     align-items: flex-start;
-    height: auto;
+    height: 100%;
     padding: 20px 20px; }
     .past-events .past-events_single .medium {
       display: flex;
@@ -422,7 +431,29 @@
       justify-content: flex-start; }
       .past-events .past-events_single .past-events_single_place .past-events_single_place_button {
         width: 140px;
-        border: 0px; } }
+        border: 0px; }
+  .past-events .past-events_single:hover {
+    height: auto;
+    /*
+            .medium {
+                .past-events_single_title {
+                    .delay {
+                        visibility: visible;
+                        opacity: 1;
+                        color: #363636;
+                        margin-top: 10px;
+                        border-bottom: 1px solid #363636;
+                        border-top: 1px solid #363636;
+                        width: 70%;
+                        p {
+                            font-size: 16px;
+                        }
+                        .bold {
+                            font-weight: 600;
+                        }
+                    }
+                }
+            } */ } }
 
 .recordings_main {
   display: flex;

@@ -150,7 +150,7 @@
             }
         }
         .past-events_single_place {
-            width: 22.5%;
+            width: 23%;
             height: 100%;
             background-color: rgb(255,170,0);
             display: flex;
@@ -236,8 +236,8 @@
             .medium {
                 display: flex;
                 flex-direction: column;
-                //width: 70%;
-                flex-grow: 4;
+                width: 70%;
+                //flex-grow: 4;
                 padding: 0;
                 margin: 0;
                 padding-left: 35px;
@@ -258,8 +258,15 @@
                 }
             }
             .past-events_single_place {
-                //width: 30%;
-                flex-grow: 1;
+                width: 30%;
+                //flex-grow: 1;
+            }
+        }
+        .past-events_single:hover {
+            height: 40vh;
+            .past-events_single_place {
+                height: 100%;
+                background-color: #ffaa00;
             }
         }
     }
@@ -304,10 +311,16 @@
         }
     }
     .past-events {
+        .past-events_header {
+            padding-bottom: 65px;
+            h2 {
+                font-size: 35px;
+            }
+        }
         .past-events_single {
             flex-direction: column;
             align-items: flex-start;
-            height: auto;
+            height: 100%;
             padding: 20px 20px;
             .medium {
                 display: flex;
@@ -345,6 +358,29 @@
                     border: 0px;
                 }
             }
+        }
+        .past-events_single:hover {
+            height: auto;
+            /*
+            .medium {
+                .past-events_single_title {
+                    .delay {
+                        visibility: visible;
+                        opacity: 1;
+                        color: #363636;
+                        margin-top: 10px;
+                        border-bottom: 1px solid #363636;
+                        border-top: 1px solid #363636;
+                        width: 70%;
+                        p {
+                            font-size: 16px;
+                        }
+                        .bold {
+                            font-weight: 600;
+                        }
+                    }
+                }
+            } */
         }
     }
 }
