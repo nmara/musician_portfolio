@@ -1,3 +1,9 @@
+header {
+    position: sticky;
+    z-index: 10;
+    top: 0;
+}
+
 .nav {
     display: flex;
     height: 80px;
@@ -25,19 +31,19 @@
 
 #nav-icon1 {
     display: none; //dodane przeze mnie
-  width: 60px;
-  height: 45px;
-  position: relative;
-  margin-right: 3vw;
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  transform: rotate(0deg);
-  -webkit-transition: .5s ease-in-out;
-  -moz-transition: .5s ease-in-out;
-  -o-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
-  cursor: pointer;
+    width: 60px;
+    height: 45px;
+    position: relative;
+    margin-right: 3vw;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
 }
 
 #nav-icon1 span {
@@ -106,36 +112,58 @@
             font-size: (25/16)*1rem;
             font-weight: 500;
         }
-        a.active { //normalny active nie działa, to poglądowo
-            color: rgb(255,170,0);     // #17453e Nie działa :(((())))
-        }
         a:hover {
             color: rgb(255,170,0);
         }
+        // .active { //normalny active nie działa, to poglądowo
+        //     color: rgb(255,170,0);     // #17453e Nie działa :(((())))
+        // }
     }
 }
 
+.active { //normalny active nie działa, to poglądowo
+    color: rgb(255,170,0);     // #17453e Nie działa :(((())))
+}
+
 @media only screen and (max-width: 1138px) {
+    .nav {
+        height: 22vh;
+        margin: 0;
+        padding: 0;
+
+    }
     .nav_menu_bar {
         display: none;
     }
 
+    ul.nav_menu_bar_visible {
+        margin: 0;
+        margin-top: 18vh;
+    }
+
     .nav_menu_bar_visible {
+        box-sizing: content-box;
+        border-top: 1px solid black;
         position: absolute;
-        margin-top: 80px;
         top: 0;
-        right: 3vw;
-        height: auto;
+        right: 0;
+        height: 82vh;
+        width: 100%;
         display: flex;
         flex-direction: column;
         text-align: center;
-        flex-grow: 3;
+        justify-content: space-around;
+        flex-grow: 2;
+        background-color: black;
+        transition: .5s;
         li  {
-            border: 0.1px solid #fff;
-            padding: 2px 5px;
+            //border: 0.1px solid #fff;
+            //padding: 2px 5px;
             margin: 0;
+            padding: 0;
             a {
                 font-size: (23/16)*1rem;
+                text-align: center;
             }
         }
 
@@ -145,7 +173,17 @@
         display: block;
     }
 
-    .nav_logo img{
+    .nav_logo img {
         width: 90%;
+    }
+}
+
+@media only screen and (max-height: 600px) {
+    .nav {
+        height: 20vh;
+    }
+    .nav_menu_bar_visible {
+        height: 82vh;
+        margin-top: 20vh;
     }
 }

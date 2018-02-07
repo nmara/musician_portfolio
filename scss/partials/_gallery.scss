@@ -6,12 +6,14 @@
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
+    padding-top: 80px; //nav
 }
+
 .gallery_head {
     font-weight: normal;
     text-transform: uppercase;
     letter-spacing: 2px;
-    padding: 55px 0 0px;
+    padding: 40px 0 0px;
     color: #fff;
     display: flex;
     align-items: center;
@@ -38,7 +40,7 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        border: 1px solid #363636;
+        border: 0.2px solid #363636;
         transition: width 0.5s, height 0.5s;
         transition-delay: 0.1s;
         margin: 10px;
@@ -63,7 +65,7 @@
         }
 
         .description_content {
-            z-index: 22;
+            // z-index: 2;
             position: absolute;
             color: #fff;
             text-transform: uppercase;
@@ -78,7 +80,7 @@
                 font-size: 14px;
             }
             p.title {
-                border-bottom: 0.25px solid #ffaa00; //może za dużo żółtego i bez?
+                border-bottom: 0.25px solid #ffaa00;
                 text-align: center;
             }
         }

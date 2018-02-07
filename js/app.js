@@ -1,10 +1,27 @@
+/* Mobile nav - starts here: */
+
 var navIcon1 = document.getElementById("nav-icon1");
 var navMenuBar = document.getElementById("nav-menu-bar");
 navIcon1.addEventListener("click", function() {
     this.classList.toggle("open");
     navMenuBar.classList.toggle("nav_menu_bar_visible");
-})
+});
 
+/*Activ nav*/
+// (function() {
+//     var nav = document.getElementById('nav-menu-bar'),
+//         anchor = nav.getElementsByTagName('li'),
+//         current = window.location.pathname.split('/')[1];
+//         console.log(ancor);
+//         for (var i = 0; i < anchor.length; i++) {
+//         if(anchor[i].href == current) {
+//             anchor[i].className = "active";
+//         }
+//     }
+// })();
+
+
+/* SLIDER - starts here: */
 function openModal() {
   document.getElementById('myModal').style.display = "flex";
 }
@@ -18,6 +35,16 @@ showSlides(slideIndex);
 
 function plusSlides(n) {
   showSlides(slideIndex += n);
+}
+
+var nextBtn = document.getElementById("plus-slides-prev");
+
+nextBtn.addEventListener("click", plusSlides(n));
+
+
+
+function myFunction() {
+    document.getElementById("demo").innerHTML = "Hello World";
 }
 
 function currentSlide(n) {

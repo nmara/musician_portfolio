@@ -15,6 +15,11 @@
     font-size: 16px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Titillium Web', Arial, sans-serif;
+    //scroll-behavior: smooth;
 }

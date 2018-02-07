@@ -23,7 +23,7 @@
                   <span></span>
                 </div>
                 <ul id="nav-menu-bar" class="nav_menu_bar">
-                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#home">Home</a></li>
                     <li><a href="#about">Biografia</a></li>
                     <li><a href="#events">Kalendarz</a></li>
                     <li><a href="#recordings">Nagrania</a></li>
@@ -38,8 +38,6 @@
     </section>
 
     <section id="about">
-        <div class="about_img">
-        </div>
         <div class="about_bio">
             <h1>Paweł Czekała</h1>
             <p>
@@ -411,7 +409,8 @@
                     <div class="description_background">
                     </div>
                     <div class="description_content">
-                        <p class="title">Koronacja Poppei</p> <p>Warszawa</p>
+                        <p class="title">Koronacja Poppei</p>
+                        <p>Warszawa</p>
                     </div>
                 </div>
                 <div class="gallery_content_row_image-2" onclick="openModal();currentSlide(2)">
@@ -533,8 +532,11 @@
                     </div>
                 </div>
 
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+
+                <a class="prev" id="plus-slides-prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" id="plus-slides-next" onclick="plusSlides(1)">&#10095;</a>
 
                 <div class="caption_container">
                     <p id="caption"></p>
