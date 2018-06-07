@@ -1,14 +1,11 @@
-header {
-    position: sticky;
-    z-index: 10;
-    top: 0;
-}
-
 .nav {
     display: flex;
     height: 80px;
     width: 100%;
     background: black;
+    position: fixed;
+    top: 0;
+    z-index: 10;
     .nav_logo, .nav_menu {
         display: flex;
         align-items: center;
@@ -20,17 +17,13 @@ header {
 }
 
 .nav_logo {
-    //font-size: 40px;
-    //color: white;
-    //text-transform: uppercase;
-    //letter-spacing: 3px;
     flex-grow: 1;
     justify-content: flex-start;
     margin-left: 3vw;
 }
 
 #nav-icon1 {
-    display: none; //dodane przeze mnie
+    display: none;
     width: 60px;
     height: 45px;
     position: relative;
@@ -47,56 +40,56 @@ header {
 }
 
 #nav-icon1 span {
-  display: block;
-  position: absolute;
-  height: 5px;
-  width: 100%;
-  background: #ffaa00;
-  border-radius: 9px;
-  opacity: 1;
-  left: 0;
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  transform: rotate(0deg);
-  -webkit-transition: .25s ease-in-out;
-  -moz-transition: .25s ease-in-out;
-  -o-transition: .25s ease-in-out;
-  transition: .25s ease-in-out;
+    display: block;
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    background: #ffaa00;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
 }
 
 #nav-icon1 span:nth-child(1) {
-  top: 0px;
+    top: 0px;
 }
 
 #nav-icon1 span:nth-child(2) {
-  top: 18px;
-  background: #fff;
+    top: 18px;
+    background: #fff;
 }
 
 #nav-icon1 span:nth-child(3) {
-  top: 36px;
+    top: 36px;
 }
 
 #nav-icon1.open span:nth-child(1) {
-  top: 18px;
-  -webkit-transform: rotate(135deg);
-  -moz-transform: rotate(135deg);
-  -o-transform: rotate(135deg);
-  transform: rotate(135deg);
+    top: 18px;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
 }
 
 #nav-icon1.open span:nth-child(2) {
-  opacity: 0;
-  left: -60px;
+    opacity: 0;
+    left: -60px;
 }
 
 #nav-icon1.open span:nth-child(3) {
-  top: 18px;
-  -webkit-transform: rotate(-135deg);
-  -moz-transform: rotate(-135deg);
-  -o-transform: rotate(-135deg);
-  transform: rotate(-135deg);
+    top: 18px;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg);
 }
 
 .nav_menu_bar {
@@ -105,85 +98,111 @@ header {
     list-style: none;
     li {
         padding-right: 30px;
-        a {
+        .nav_menu_bar_item {
             text-decoration: none;
             text-transform: uppercase;
             color: white;
             font-size: (25/16)*1rem;
             font-weight: 500;
+            transition: 0.2s;
+            .mobile-nav-icon {
+                display: none;
+            }
         }
-        a:hover {
+        .active {
             color: rgb(255,170,0);
         }
-        // .active { //normalny active nie działa, to poglądowo
-        //     color: rgb(255,170,0);     // #17453e Nie działa :(((())))
-        // }
+        .nav_menu_bar_item:hover {
+            color: lighten(#333333, 35%);
+            cursor: pointer;
+        }
     }
 }
-
-.active { //normalny active nie działa, to poglądowo
-    color: rgb(255,170,0);     // #17453e Nie działa :(((())))
-}
-
 @media only screen and (max-width: 1138px) {
-    .nav {
-        height: 22vh;
-        margin: 0;
-        padding: 0;
-
-    }
+    // .nav_menu_bar_bg {
+    //     display: none;
+    // }
     .nav_menu_bar {
         display: none;
     }
 
-    ul.nav_menu_bar_visible {
-        margin: 0;
-        margin-top: 18vh;
-    }
-
     .nav_menu_bar_visible {
-        box-sizing: content-box;
-        border-top: 1px solid black;
-        position: absolute;
-        top: 0;
-        right: 0;
-        height: 82vh;
+        position: fixed;
+        padding-right: 4vw;
+        padding-top: 3vh;
         width: 100%;
+        top: 80px;
+        right: 0;
+        height: auto;
         display: flex;
         flex-direction: column;
-        text-align: center;
-        justify-content: space-around;
-        flex-grow: 2;
-        background-color: black;
-        transition: .5s;
+        text-align: right;
+        z-index: 2;
+        text-transform: lowercase;
         li  {
-            //border: 0.1px solid #fff;
-            //padding: 2px 5px;
+            padding: 8px 5px;
             margin: 0;
-            padding: 0;
-            a {
-                font-size: (23/16)*1rem;
-                text-align: center;
+            transform: translate(100%);
+            opacity: 0;
+            animation-name: showMenu;
+            animation-duration: 0.7s;
+            animation-fill-mode: forwards;
+            .nav_menu_bar_item {
+                color: #fff;
+                font-size: 26px;
+                text-transform: capitalize;
+                .mobile-nav-icon {
+                    display: inline-block;
+                    padding-left: 3vw;
+                    font-size: 26px;
+                    color: rgb(255,170,0);
+                }
+            }
+            .active {
+                color: rgb(255,170,0);
+            }
+            .nav_menu_bar_item:hover {
+                color: lighten(#333333, 35%);
+                cursor: pointer;
             }
         }
+        @for $i from 1 through 6 {
+            li:nth-child(#{$i}) {
+                animation-delay: ((($i)*0.1)+0.05)*1s;
+            }
+        }
+    }
 
+    @keyframes showMenu {
+        from {transform: translate(100%); opacity: 0;}
+        to {transform: translate(0); opacity: 1;}
     }
 
     #nav-icon1 {
         display: block;
     }
 
-    .nav_logo img {
+    .nav_logo img{
         width: 90%;
     }
-}
-
-@media only screen and (max-height: 600px) {
-    .nav {
-        height: 20vh;
+    .nav_menu_bar_bg {
+        position: fixed;
+        top: 80px;
+        left: -50%;
+        width: 0;
+        height: 0;
+        border-left: 150vw solid transparent;
+        border-right: 150vw solid transparent;
+        border-top: 0vw solid #000;
+        z-index: 1;
+        display: flex;
+        transition: 0.3s;
+        visibility: hidden;
     }
-    .nav_menu_bar_visible {
-        height: 82vh;
-        margin-top: 20vh;
+    .show-mobile-nav {
+        visibility: visible;
+        border-left: 150vw solid transparent;
+        border-right: 150vw solid transparent;
+        border-top: 150vw solid #000;
     }
 }

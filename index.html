@@ -5,15 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Paweł Czekała</title>
-    <link rel="stylesheet" href="fontawesome/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <header>
-        <div class="nav">
+    <header id="header">
+        <div class="nav" id="main-nav">
             <div class="nav_logo">
-                <!--<span>Paweł Czekała</span>-->
                 <img src="images/logo.png">
             </div>
             <div class="nav_menu">
@@ -22,40 +21,41 @@
                   <span></span>
                   <span></span>
                 </div>
+                <div class="nav_menu_bar_bg"id="nav-menu-bar-bg"></div>
                 <ul id="nav-menu-bar" class="nav_menu_bar">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">Biografia</a></li>
-                    <li><a href="#events">Kalendarz</a></li>
-                    <li><a href="#recordings">Nagrania</a></li>
-                    <li><a href="#gallery">Galeria</a></li>
-                    <li><a href="#contact">Kontakt</a></li>
+                    <li><a class="nav_menu_bar_item active" data-nav="home" onclick="correctNavScroll(this)">home <i class="fas fa-home mobile-nav-icon"></i></a></li>
+                    <li><a class="nav_menu_bar_item" data-nav="about" onclick="correctNavScroll(this)">biografia <i class="fas fa-user mobile-nav-icon"></i></a></li>
+                    <li><a class="nav_menu_bar_item" data-nav="events" onclick="correctNavScroll(this)">kalendarz <i class="far fa-calendar-alt mobile-nav-icon"></i></a></li>
+                    <li><a class="nav_menu_bar_item" data-nav="recordings" onclick="correctNavScroll(this)">nagrania <i class="fas fa-music mobile-nav-icon"></i></a></li>
+                    <li><a class="nav_menu_bar_item" data-nav="gallery" onclick="correctNavScroll(this)">galeria <i class="fas fa-images mobile-nav-icon"></i></a></li>
+                    <li><a class="nav_menu_bar_item" data-nav="contact" onclick="correctNavScroll(this)">kontakt <i class="fas fa-phone mobile-nav-icon"></i></a></li>
                 </ul>
             </div>
         </div>
     </header>
 
-    <section id="home">
+    <section id="home" class="section">
     </section>
 
-    <section id="about">
+    <section id="about" class="section">
         <div class="about_bio">
             <h1>Paweł Czekała</h1>
             <p>
-            Absolwent Uniwersytetu Muzycznego im. F. Chopina w Warszawie. Uzyskał dyplom z wyróżnieniem w klasie prof. Kazimierza Pustelaka. Staż artystyczny na UMFC u dr. hab. Artura Stefanowicza. Ukończył kursy wokalne pod kierunkiem prof. Ryszarda Karczykowskiego, Jana Van Elsackera, Kai Wessela, Rudolfa Piernaya, Izabeli Kłosińskiej, Mai Nosowskiej.
+            Absolwent Uniwersytetu Muzycznego im.&nbsp;F.&nbsp;Chopina w&nbsp;Warszawie. Uzyskał dyplom z&nbsp;wyróżnieniem w&nbsp;klasie prof.&nbsp;Kazimierza&nbsp;Pustelaka. Staż artystyczny na&nbsp;UMFC u&nbsp;dr.&nbsp;hab.&nbsp;Artura Stefanowicza. Ukończył kursy wokalne pod&nbsp;kierunkiem prof.&nbsp;Ryszarda&nbsp;Karczykowskiego, Jana&nbsp;Van&nbsp;Elsackera, Kai&nbsp;Wessela, Rudolfa&nbsp;Piernaya, Izabeli&nbsp;Kłosińskiej, Mai&nbsp;Nosowskiej.
             </p>
             <p>
-            Występował na scenach Teatru Wielkiego, Teatru Collegium Nobilium, Filharmonii Świętokrzyskiej, Warszawskiej Opery Kameralnej, Opera Nova, Międzynarodowym Festiwalu Muzycznym w Gdańsku, Polskim Radio.
+            Występował na&nbsp;scenach Teatru Wielkiego, Teatru Collegium Nobilium, Filharmonii Świętokrzyskiej, Warszawskiej Opery Kameralnej, Opera Nova, Międzynarodowym Festiwalu Muzycznym w&nbsp;Gdańsku, Polskim Radio.
             </p>
             <p>
-            W swoim repertuarze posiada zarówno partie operowe jak i liczne dzieła oratoryjne. Wykonywał wielokrotnie Requiem oraz Mszę Koronacyjną W.A. Mozarta, Mszę c-moll W.A. Mozarta, Stabat Mater F.J. Haydna, Stabat Mater G. Rossiniego, Siedem Ostatnich Słów Chrystusa na Krzyżu J. Haydna, Kantaty J.S. Bacha, Oniegin P. Czajkowskiego partia Gremina, Don Giovanni W.A. Mozart partia Komandora, Koronacja Poppei C. Monteverdiego partia Seneki, Rodelinda G.F. Händla partia Garibalda, Sen nocy letniej B. Brittena partia Pigwy, Krakowiacy i Górale partia Bartłomieja, Burza H. Purcella partia Prospera.
+            W&nbsp;swoim repertuarze posiada zarówno partie operowe jak&nbsp;i&nbsp;liczne dzieła oratoryjne. Wykonywał wielokrotnie Requiem oraz&nbsp;Mszę Koronacyjną W.A.&nbsp;Mozarta, Mszę c-moll W.A.&nbsp;Mozarta, Stabat Mater F.J.&nbsp;Haydna, Stabat Mater G.&nbsp;Rossiniego, Siedem Ostatnich Słów Chrystusa na Krzyżu J.&nbsp;Haydna, Kantaty J.S.&nbsp;Bacha, Oniegin P.&nbsp;Czajkowskiego partia Gremina, Don Giovanni W.A.&nbsp;Mozart partia Komandora, Koronacja Poppei C.&nbsp;Monteverdiego partia Seneki, Rodelinda G.F.&nbsp;Händla partia Garibalda, Sen nocy letniej B.&nbsp;Brittena partia Pigwy, Krakowiacy i&nbsp;Górale partia Bartłomieja, Burza H.&nbsp;Purcella partia Prospera.
             </p>
             <p>
-            Współpracował z dyrygentami M. Kulczyńską, R. Janiak, D. Zimnickim, J. Przybylskim, J. Rogalą, J. Łukaszewskim, P. Wajrak, W. Kłosiewiczem.
+            Współpracował z dyrygentami M.&nbsp;Kulczyńską, R.&nbsp;Janiak, D.&nbsp;Zimnickim, J.&nbsp;Przybylskim, J.&nbsp;Rogalą, J.&nbsp;Łukaszewskim, P.&nbsp;Wajrak, W.&nbsp;Kłosiewiczem.
             </p>
         </div>
     </section>
 
-    <section id="events">
+    <section id="events" class="section">
         <div class="events_header">
             <h2>Kalendarz</h2>
         </div>
@@ -124,237 +124,28 @@
                 <h2>Minione wydarzenia</h2>
             </div>
 
-            <div class="past-events_single">
-                <div class="past-events_header_year">
-                    <span>2017</span>
-                </div>
-                <div class="medium">
-                    <div class="past-events_single_date">
-                        <p>9 października</p>
-                    </div>
-                    <div class="past-events_single_title">
-                        <p class="bold">
-                        Stabat Mater F.J. Haydna
-                        </p>
-                        <p>Kraków</p>
-                        <div class="delay">
-                            <p class="bold">Teatr Stary</p>
-                            <p>Mateusz Kowalski, drygent</p>
-                            <p>Anna Janion, reżyser</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="past-events_single_place">
-                    <button class="past-events_single_place_button">
-                        <a href="http://teatrwielki.pl/" target="_blank">
-                            <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
-                        </a>
-                    </button>
-                </div>
-            </div>
+
 
             <div class="past-events_single">
                 <div class="medium">
                     <div class="past-events_single_date">
-                        <p>9 października</p>
+                        <p class="past-event-date">25 maja 2012</p>
                     </div>
                     <div class="past-events_single_title">
-                        <p class="bold">
-                        Stabat Mater F.J. Haydna
+                        <p class="bold past-event-title">
+                        Sen Nocy Letniej
                         </p>
-                        <p>Kraków</p>
+                        <p class="past-event-city">Warszawa</p>
                         <div class="delay">
-                            <p class="bold">Teatr Stary</p>
-                            <p>Mateusz Kowalski, drygent</p>
-                            <p>Anna Janion, reżyser</p>
+                            <p class="bold past-event-place">Teatr Wielki</p>
+                            <p class="past-event-author">autor: B.&nbsp;Britten</p>
+                            <p class="past-event-part">partia: Pigwa</p>
                         </div>
                     </div>
                 </div>
                 <div class="past-events_single_place">
                     <button class="past-events_single_place_button">
-                        <a href="http://teatrwielki.pl/" target="_blank">
-                            <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
-                        </a>
-                    </button>
-                </div>
-            </div>
-
-            <div class="past-events_single">
-                <div class="medium">
-                    <div class="past-events_single_date">
-                        <p>9 października</p>
-                    </div>
-                    <div class="past-events_single_title">
-                        <p class="bold">
-                        Stabat Mater F.J. Haydna
-                        </p>
-                        <p>Kraków</p>
-                        <div class="delay">
-                            <p class="bold">Teatr Stary</p>
-                            <p>Mateusz Kowalski, drygent</p>
-                            <p>Anna Janion, reżyser</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="past-events_single_place">
-                    <button class="past-events_single_place_button">
-                        <a href="http://teatrwielki.pl/" target="_blank">
-                            <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
-                        </a>
-                    </button>
-                </div>
-            </div>
-
-            <div class="past-events_single">
-                <div class="medium">
-                    <div class="past-events_single_date">
-                        <p>9 października</p>
-                    </div>
-                    <div class="past-events_single_title">
-                        <p class="bold">
-                        Stabat Mater F.J. Haydna
-                        </p>
-                        <p>Kraków</p>
-                        <div class="delay">
-                            <p class="bold">Teatr Stary</p>
-                            <p>Mateusz Kowalski, drygent</p>
-                            <p>Anna Janion, reżyser</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="past-events_single_place">
-                    <button class="past-events_single_place_button">
-                        <a href="http://teatrwielki.pl/" target="_blank">
-                            <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
-                        </a>
-                    </button>
-                </div>
-            </div>
-
-            <div class="past-events_single">
-                <div class="medium">
-                    <div class="past-events_single_date">
-                        <p>9 października</p>
-                    </div>
-                    <div class="past-events_single_title">
-                        <p class="bold">
-                        Stabat Mater F.J. Haydna
-                        </p>
-                        <p>Kraków</p>
-                        <div class="delay">
-                            <p class="bold">Teatr Stary</p>
-                            <p>Mateusz Kowalski, drygent</p>
-                            <p>Anna Janion, reżyser</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="past-events_single_place">
-                    <button class="past-events_single_place_button">
-                        <a href="http://teatrwielki.pl/" target="_blank">
-                            <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
-                        </a>
-                    </button>
-                </div>
-            </div>
-
-            <div class="past-events_single">
-                <div class="medium">
-                    <div class="past-events_single_date">
-                        <p>9 października</p>
-                    </div>
-                    <div class="past-events_single_title">
-                        <p class="bold">
-                        Stabat Mater F.J. Haydna
-                        </p>
-                        <p>Kraków</p>
-                        <div class="delay">
-                            <p class="bold">Teatr Stary</p>
-                            <p>Mateusz Kowalski, drygent</p>
-                            <p>Anna Janion, reżyser</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="past-events_single_place">
-                    <button class="past-events_single_place_button">
-                        <a href="http://teatrwielki.pl/" target="_blank">
-                            <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
-                        </a>
-                    </button>
-                </div>
-            </div>
-
-            <div class="past-events_single">
-                <div class="medium">
-                    <div class="past-events_single_date">
-                        <p>9 października</p>
-                    </div>
-                    <div class="past-events_single_title">
-                        <p class="bold">
-                        Stabat Mater F.J. Haydna
-                        </p>
-                        <p>Kraków</p>
-                        <div class="delay">
-                            <p class="bold">Teatr Stary</p>
-                            <p>Mateusz Kowalski, drygent</p>
-                            <p>Anna Janion, reżyser</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="past-events_single_place">
-                    <button class="past-events_single_place_button">
-                        <a href="http://teatrwielki.pl/" target="_blank">
-                            <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
-                        </a>
-                    </button>
-                </div>
-            </div>
-
-            <div class="past-events_single">
-                <div class="medium">
-                    <div class="past-events_single_date">
-                        <p>9 października</p>
-                    </div>
-                    <div class="past-events_single_title">
-                        <p class="bold">
-                        Stabat Mater F.J. Haydna
-                        </p>
-                        <p>Kraków</p>
-                        <div class="delay">
-                            <p class="bold">Teatr Stary</p>
-                            <p>Mateusz Kowalski, drygent</p>
-                            <p>Anna Janion, reżyser</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="past-events_single_place">
-                    <button class="past-events_single_place_button">
-                        <a href="http://teatrwielki.pl/" target="_blank">
-                            <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
-                        </a>
-                    </button>
-                </div>
-            </div>
-
-            <div class="past-events_single">
-                <div class="medium">
-                    <div class="past-events_single_date">
-                        <p>9 października</p>
-                    </div>
-                    <div class="past-events_single_title">
-                        <p class="bold">
-                        Stabat Mater F.J. Haydna
-                        </p>
-                        <p>Kraków</p>
-                        <div class="delay">
-                            <p class="bold">Teatr Stary</p>
-                            <p>Mateusz Kowalski, drygent</p>
-                            <p>Anna Janion, reżyser</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="past-events_single_place">
-                    <button class="past-events_single_place_button">
-                        <a href="http://teatrwielki.pl/" target="_blank">
+                        <a href="http://teatrwielki.pl/" target="_blank" class="past-event-link">
                             <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
                         </a>
                     </button>
@@ -364,7 +155,7 @@
         </div>
     </section>
 
-    <section id="recordings">
+    <section id="recordings" class="section">
         <div class="recordings_main">
             <div class="recordings_main_content">
                 <div class="recordings_main_content_head">
@@ -399,7 +190,7 @@
         </div>
     </section>
 
-    <section id="gallery">
+    <section id="gallery" class="section">
         <div class="gallery_head">
             <h2>Galeria</h2>
         </div>
@@ -409,8 +200,7 @@
                     <div class="description_background">
                     </div>
                     <div class="description_content">
-                        <p class="title">Koronacja Poppei</p>
-                        <p>Warszawa</p>
+                        <p class="title">Koronacja Poppei</p> <p>Warszawa</p>
                     </div>
                 </div>
                 <div class="gallery_content_row_image-2" onclick="openModal();currentSlide(2)">
@@ -469,6 +259,22 @@
                         <p>Warszawa</p>
                     </div>
                 </div>
+                <div class="gallery_content_row_image-9" onclick="openModal();currentSlide(9)">
+                    <div class="description_background">
+                    </div>
+                    <div class="description_content">
+                        <p class="title">I Capuleti e i Montecchi</p>
+                        <p>Wrocław</p>
+                    </div>
+                </div>
+                <div class="gallery_content_row_image-10" onclick="openModal();currentSlide(10)">
+                    <div class="description_background">
+                    </div>
+                    <div class="description_content">
+                        <p class="title">I Capuleti e i Montecchi</p>
+                        <p>Wrocław</p>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -476,92 +282,102 @@
             <span class="close cursor" onclick="closeModal()">&times;</span>
             <div class="modal_content">
                 <div class="mySlides">
-                    <div class="numbertext">1 / 8</div>
+                    <div class="numbertext">1 / 10</div>
                     <img src="images/gallery-1.jpg">
                     <div class="description">
                         <p>Koronacja Poppei</p>
                     </div>
                 </div>
                 <div class="mySlides">
-                    <div class="numbertext">2 / 8</div>
+                    <div class="numbertext">2 / 10</div>
                     <img src="images/gallery-2.jpg">
                     <div class="description">
                         <p>Requiem Mozarta</p>
                     </div>
                 </div>
                 <div class="mySlides">
-                    <div class="numbertext">3 / 8</div>
+                    <div class="numbertext">3 / 10</div>
                     <img src="images/gallery-3.jpg">
                     <div class="description">
                         <p>Cud albo Krakowiaki i Górale</p>
                     </div>
                 </div>
                 <div class="mySlides">
-                    <div class="numbertext">4 / 8</div>
+                    <div class="numbertext">4 / 10</div>
                     <img src="images/gallery-4.jpg">
                     <div class="description">
                         <p>Rodelinda</p>
                     </div>
                 </div>
                 <div class="mySlides">
-                    <div class="numbertext">5 / 8</div>
+                    <div class="numbertext">5 / 10</div>
                     <img src="images/gallery-5.jpg">
                     <div class="description">
                         <p>Rodelinda</p>
                     </div>
                 </div>
                 <div class="mySlides">
-                    <div class="numbertext">6 / 8</div>
+                    <div class="numbertext">6 / 10</div>
                     <img src="images/gallery-6.jpg">
                     <div class="description">
                         <p>Rodelinda</p>
                     </div>
                 </div>
                 <div class="mySlides">
-                    <div class="numbertext">7 / 8</div>
+                    <div class="numbertext">7 / 10</div>
                     <img src="images/gallery-7.jpg" style="100%" alt="jsasfhs">
                     <div class="description">
                         <p>Wiosna Chórów</p>
                     </div>
                 </div>
                 <div class="mySlides">
-                    <div class="numbertext">8 / 8</div>
+                    <div class="numbertext">8 / 10</div>
                     <img src="images/gallery-8.jpg" style="100%" alt="jsasfhs">
                     <div class="description">
                         <p>Wiosna Chórów</p>
                     </div>
                 </div>
-
-                <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
-
-                <a class="prev" id="plus-slides-prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" id="plus-slides-next" onclick="plusSlides(1)">&#10095;</a>
+                <div class="mySlides">
+                    <div class="numbertext">9 / 10</div>
+                    <img src="images/gallery-9.jpg" style="100%" alt="jsasfhs">
+                    <div class="description">
+                        <p>I Capuleti e i Montecchi</p>
+                    </div>
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">10 / 10</div>
+                    <img src="images/gallery-10.jpg" style="100%" alt="jsasfhs">
+                    <div class="description">
+                        <p>I Capuleti e i Montecchi</p>
+                    </div>
+                </div>
 
                 <div class="caption_container">
                     <p id="caption"></p>
                 </div>
             </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
 
     </section>
 
-    <section id="contact">
+    <section id="contact" class="section">
         <div class="contact_container">
             <div class="contact_container_header">
                 <h2>Kontakt</h2>
             </div>
             <div class="contact_container_infoDetails">
                 <p>+48 508-084-044</p>
-                <p>pawel.czekala@gmail.com</p>
+                <!-- <p>pawel.czekala@vp.pl</p> -->
+                <p>p.czekala.erber@gmail.com</p>
             </div>
             <div class="contact_container_form">
                 <p>Jeśli chcą Państwo otrzymywać informacje<br>o nowych wydarzeniach, proszę o pozostawienie maila.
                 </p>
-                <form action="#" method="get">
-                <!--<label for="email">adres e-mail:</label><br>-->
-                <input type="email" name="email" id="email" placeholder="Twój mail"><br>
-                <input type="submit" value="Wyślij">
+                <form method="post" name="send-your-name" action="form-to-email.php">
+                    <input type="email" name="email" id="email" placeholder="Twój mail"><br>
+                    <input type="submit" name="submit" value="Wyślij">
                 </form>
             </div>
         </div>

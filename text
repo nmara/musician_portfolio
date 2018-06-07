@@ -1,0 +1,74 @@
+// Constructor function for Person objects
+function Person(first, last, age, eye) {
+    this.firstName = first;
+    this.lastName = last;
+    this.age = age;
+    this.eyeColor = eye;
+}
+
+// Create a Person object
+var myFather = new Person("John", "Doe", 50, "blue");
+
+function Event(date, title, author, part, place) {
+    this.date = date;
+    this.title = title;
+    this.author = author;
+    this.part = part;
+    this.place = place;
+}
+
+var event1 = new Event("05.2012", "Sen Nocy Letniej", "B.Britten", "Pigwy", "Teatr Wielki");
+var event2 = new Event("04.2013", "Koronacja Poppei", "")
+04.2013 Collegium Nobilum
+Koronacja Poppei
+C.Monteverdi
+partia Seneki
+
+04.2014 Gdański Festiwal Muzyczny
+Siedem ostatnich słów Chrystusa na krzyżu
+J.Haydn
+
+04.2014 Studio koncertowe Polskiego Radia
+Msza koronacyjna C-dur
+W.A. Mozart
+
+03.2014 Filharmonia Świętokrzyska
+Don Giovanni
+W.A.Mozart
+partia Komandora
+
+07.2014 Opera Kameralna Warszawa
+Don Giovanni
+W.A.Mozart
+partia Komandora
+
+04.2015 Opera Nova
+Oniegin
+P.Czajkowski
+partia Gremina
+
+09.2015 Teatr Wielki
+W.Bogusławski
+partia Bartłomieja
+
+11.2015 kościół ss.Wizytek Warszawa
+Kantaty 84,156,166,185
+J.S.Bach
+
+10.2015 Collegium Nobilium
+Rodelinda
+G.F. Haendel
+partia Garibaldo
+
+05.2017 Wiosna Chórów
+Msza c-moll
+W.A.Mozart
+
+06.2017 Barok na Mazurach
+Requiem
+W.A.Mozart
+
+03.2018 Opera Wrocław
+Capuletti e Montecchi
+V.Bellini
+partia Capellio
