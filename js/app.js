@@ -1,4 +1,4 @@
-
+AOS.init();
 // stop audio if other is playing
 document.addEventListener('play', function(e){
     var audios = document.getElementsByTagName('audio');
@@ -117,40 +117,41 @@ function showSlides(n) {
 var pastEvents = [];
 
 // -------------Event constructor-----------
-function SingleEvent(date, title, city, place, author, part, link) {
+function SingleEvent(date, title, city, place, author, part, conductor, link) {
     this.date = date;
     this.title = title;
     this.city = city;
     this.place = place;
     this.author = author;
     this.part = part;
+    this.conductor = conductor;
     this.link = link;
 }
 
 // --------------All events-------------
-var singleEvent = new SingleEvent("12 kwietnia 2013", "Koronacja Poppei", "Warszawa", "Collegium Nobilum", "autor: C.&nbsp;Monteverdi", "partia: Seneka", "http://teatrwielki.pl/");
+var singleEvent = new SingleEvent("12 kwietnia 2013", "Koronacja Poppei", "Warszawa", "Collegium Nobilum", "C.&nbsp;Monteverdi", "partia: Seneka", "Lilianna Stawarz - kierownictwo muzyczne", "http://www.encyklopediateatru.pl/przedstawienie/49419/koronacja-poppei");
 pastEvents.push(singleEvent);
-var singleEvent = new SingleEvent("12 kwietnia 2014", "Siedem ostatnich słów Chrystusa na krzyżu", "Gdańsk", "Gdański Festiwal Muzyczny", "autor: J.&nbsp;Haydn", null, "http://polskichorkameralny.pl/doc_941.html");
+var singleEvent = new SingleEvent("12 kwietnia 2014", "Siedem ostatnich słów Chrystusa na krzyżu", "Gdańsk", "Gdański Festiwal Muzyczny", "J.&nbsp;Haydn", null, "Jan Łukaszewski - dyrygent", "http://polskichorkameralny.pl/doc_941.html");
 pastEvents.push(singleEvent);
-var singleEvent = new SingleEvent("23 marca 2014", "Msza koronacyjna C-dur", "Warszawa", "Studio Koncertowe Polskiego Radia im. Witolda Lutosławskiego", "autor: W.A.&nbsp;Mozart", null, "http://www.kulturalna.warszawa.pl/wydarzenia,1,107777,Koncerty_muzyki_powa%C5%BCnej_w_Polskim_Radiu.html?locale=pl_PL");
+var singleEvent = new SingleEvent("23 marca 2014", "Msza koronacyjna <br> C-dur", "Warszawa", "Studio Koncertowe Polskiego Radia im. Witolda Lutosławskiego", "W.A.&nbsp;Mozart", null, "Marta Kluczyńska - dyrygent", "http://www.kulturalna.warszawa.pl/wydarzenia,1,107777,Koncerty_muzyki_powa%C5%BCnej_w_Polskim_Radiu.html?locale=pl_PL");
 pastEvents.push(singleEvent);
-var singleEvent = new SingleEvent("14 marca 2014", "Don Giovanni", "Kielce", "Filharmonia Świętokrzyska", "autor: W.A.&nbsp;Mozart", "partia: Komandor", "http://filharmonia.kielce.pl/arch_2014/archiwum14_03_14.html");
+var singleEvent = new SingleEvent("14 marca 2014", "Don Giovanni", "Kielce", "Filharmonia Świętokrzyska", "W.A.&nbsp;Mozart", "partia: Komandor", "Jacek Rogala - dyrygent", "http://filharmonia.kielce.pl/arch_2014/archiwum14_03_14.html");
 pastEvents.push(singleEvent);
-var singleEvent = new SingleEvent("24 października 2014", "Don Giovanni", "Warszawa", "Opera Kameralna", "autor: W.A.&nbsp;Mozart", "partia: Komandor", "http://www.operakameralna.pl/index.php?24102014-n-21");
+var singleEvent = new SingleEvent("24 października 2014", "Don Giovanni", "Warszawa", "Opera Kameralna", "W.A.&nbsp;Mozart", "partia: Komandor", "Lilianna Krych - dyrygent", "http://www.operakameralna.pl/index.php?24102014-n-21");
 pastEvents.push(singleEvent);
-var singleEvent = new SingleEvent("27 kwietnia 2015", "Eugeniusz Oniegin", "Bydgoszcz", "Opera Nova", "autor: Piotr Czajkowski", "partia: Griemin", "http://www.ofm.amuz.bydgoszcz.pl/index.php?act=article&artid=94");
+var singleEvent = new SingleEvent("27 kwietnia 2015", "Eugeniusz Oniegin", "Bydgoszcz", "Opera Nova", "P.&nbsp;Czajkowski", "partia: Griemin", "Piotr Wajrak - kierownictwo muzyczne", "http://www.ofm.amuz.bydgoszcz.pl/index.php?act=article&artid=94");
 pastEvents.push(singleEvent);
-var singleEvent = new SingleEvent("13 marca 2015", "Cud albo Krakowiaki i Górale", "Warszawa", "Teatr Wielki – Opera Narodowa", "autor: Wojciech Bogusławski", "partia: Bartłomiej", "https://teatrwielki.pl/repertuar/kalendarium/2014-2015/cud-albo-krakowiaki-i-gorale/");
+var singleEvent = new SingleEvent("13 marca 2015", "Cud albo Krakowiaki i Górale", "Warszawa", "Teatr Wielki – Opera Narodowa", "W.&nbsp;Bogusławski", "partia: Bartłomiej", "Władysław Kłosiewicz - dyrygent", "https://teatrwielki.pl/repertuar/kalendarium/2014-2015/cud-albo-krakowiaki-i-gorale/");
 pastEvents.push(singleEvent);
-var singleEvent = new SingleEvent("21 listopada 2015", "Kantaty 84, 156, 166, 185", "Warszawa", "Kościół Sióstr Wizytek pw. św. Józefa Oblubieńca", "autor: J.S.&nbsp;Bach", null, "http://www.kulturalna.warszawa.pl/wydarzenia,1,148956.html?locale=pl_PL");
+var singleEvent = new SingleEvent("21 listopada 2015", "Kantaty 84, 156, 166, 185", "Warszawa", "Kościół Sióstr Wizytek pw. św. Józefa Oblubieńca", "J.S.&nbsp;Bach", null, "Krzysztof Garstka - kierownictwo muzyczne", "http://www.kulturalna.warszawa.pl/wydarzenia,1,148956.html?locale=pl_PL");
 pastEvents.push(singleEvent);
-var singleEvent = new SingleEvent("23 października 2015", "Rodelinda", "Warszawa", "Teatr Collegium Nobilium", "autor: G.F.&nbsp;Handel", "partia: Garibaldo", "https://tcn.at.edu.pl/spektakl/rodelinda/");
+var singleEvent = new SingleEvent("23 października 2015", "Rodelinda", "Warszawa", "Teatr Collegium Nobilium", "G.F.&nbsp;Handel", "partia: Garibaldo", "Krzysztof Garstka - kierownictwo muzyczne", "https://tcn.at.edu.pl/spektakl/rodelinda/");
 pastEvents.push(singleEvent);
-var singleEvent = new SingleEvent("2 czerwca 2017", "Msza c-moll", "Warszawa", "II Festiwal Wiosna Chórów", "autor: W.A.&nbsp;Mozart", null, "http://www.chor.uw.edu.pl/wch2-o-festiwalu");
+var singleEvent = new SingleEvent("2 czerwca 2017", "Msza c-moll", "Warszawa", "II Festiwal Wiosna Chórów", "W.A.&nbsp;Mozart", null, "Irina Bogdanovich - dyrygent", "http://www.chor.uw.edu.pl/wch2-o-festiwalu");
 pastEvents.push(singleEvent);
-var singleEvent = new SingleEvent("2 lipca 2017", "Requiem", "Gołdap", "Barok na Mazurach", "autor: W.A.&nbsp;Mozart", null, "http://www.fundacja-namazurach.pl/barok-na-mazurach/");
+var singleEvent = new SingleEvent("2 lipca 2017", "Requiem", "Gołdap", "Barok na Mazurach", "W.A.&nbsp;Mozart", null, "Dariusz Zimnicki – dyrygent", "http://www.fundacja-namazurach.pl/barok-na-mazurach/");
 pastEvents.push(singleEvent);
-var singleEvent = new SingleEvent("24 marca 2018", "I Capuleti e i Montecchi", "Wrocław", "Opera Wrocławska", "autor: V.&nbsp;Bellini", "partia: Cappelio", "http://www.opera.wroclaw.pl/1/spektakl.php?_id=4235");
+var singleEvent = new SingleEvent("24 marca 2018", "I Capuleti e i Montecchi", "Wrocław", "Opera Wrocławska", "V.&nbsp;Bellini", "partia: Cappelio", "Marcin Nałęcz-Niesiołowski - dyrygent", "http://www.opera.wroclaw.pl/1/spektakl.php?_id=4235");
 pastEvents.push(singleEvent);
 console.log(pastEvents);
 // --------------Creating new single event-------------
@@ -165,6 +166,8 @@ for (var i = 0; i < pastEvents.length; i++) {
         if(elText !== null) {
             console.log(elText);
             el.innerHTML = elText;
+        } else {
+            el.innerHTML = "";
         }
     }
     setNewText('date', pastEvents[i].date);
@@ -173,9 +176,6 @@ for (var i = 0; i < pastEvents.length; i++) {
     setNewText('place', pastEvents[i].place);
     setNewText('author', pastEvents[i].author);
     setNewText('part', pastEvents[i].part);
+    setNewText('conductor', pastEvents[i].conductor);
     newPastEventSingle.querySelector(".past-event-link").href = pastEvents[i].link;
 }
-// show whole event item
-function showEvent(el) {
-    el.classList.toggle("show-event");
-};
