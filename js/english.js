@@ -128,7 +128,7 @@ function SingleEvent(date, title, city, place, author, part, link) {
 }
 
 // --------------All events-------------
-var singleEvent = new SingleEvent("12 kwietnia 2013", "Koronacja Poppei", "Warszawa", "Collegium Nobilum", "autor: C.&nbsp;Monteverdi", "partia: Seneka", "http://teatrwielki.pl/");
+var singleEvent = new SingleEvent("April 12th 2013", "Koronacja Poppei", "Warszawa", "Collegium Nobilum", "autor: C.&nbsp;Monteverdi", "partia: Seneka", "http://teatrwielki.pl/");
 pastEvents.push(singleEvent);
 var singleEvent = new SingleEvent("12 kwietnia 2014", "Siedem ostatnich słów Chrystusa na krzyżu", "Gdańsk", "Gdański Festiwal Muzyczny", "autor: J.&nbsp;Haydn", null, "http://polskichorkameralny.pl/doc_941.html");
 pastEvents.push(singleEvent);

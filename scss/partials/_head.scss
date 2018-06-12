@@ -6,6 +6,9 @@
     position: fixed;
     top: 0;
     z-index: 10;
+    -webkit-box-shadow: 0px 3px 10px -1px rgba(0,0,0,0.6);
+    -moz-box-shadow: 0px 3px 10px -1px rgba(0,0,0,0.6);
+    box-shadow: 0px 3px 10px -1px rgba(0,0,0,0.6);
     .nav_logo, .nav_menu {
         display: flex;
         align-items: center;
@@ -105,16 +108,48 @@
             font-size: (25/16)*1rem;
             font-weight: 500;
             transition: 0.2s;
+            cursor: pointer;
+            position: relative;
             .mobile-nav-icon {
                 display: none;
             }
         }
-        .active {
-            color: rgb(255,170,0);
+        .nav_menu_bar_item::after {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            content: '';
+            display: block;
+            width: 0;
+            height: 1px;
+            background-color: #ffaa00;
+            transition: width .5s, left 0.5s;
         }
-        .nav_menu_bar_item:hover {
-            color: lighten(#333333, 35%);
-            cursor: pointer;
+        .nav_menu_bar_item::before {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            content: '';
+            display: block;
+            width: 0;
+            height: 1px;
+            background-color: #ffaa00;
+            transition: width .5s, right .5s;
+        }
+        .nav_menu_bar_item:hover::after {
+            width: 70%;
+            left: 30%;
+        }
+        .nav_menu_bar_item:hover::before {
+            width: 30%;
+            right: 70%;
+        }
+        .active {
+            color: #ffaa00;
+        }
+        .nav_menu_bar_item.lang-version {
+            font-size: 16px;
+            color: #ffaa00;
         }
     }
 }
