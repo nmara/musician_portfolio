@@ -1,5 +1,5 @@
 .about_bio {
-    padding: 70px 0 20px;
+    padding: 70px 0 70px;
     position: relative;
     max-width: 1000px;
     margin: 0 auto;
@@ -48,13 +48,50 @@
 }
 @media only screen and (max-width: 1024px) {
     .about_bio {
+        width: 85%;
         h1 {
             font-size: 2rem;
         }
         p {
             font-size: 1.1rem;
-            margin: 3vw 5vw;
-            text-align: left;
+        }
+    }
+}
+@media only screen and (max-width: 800px) {
+    .about_bio {
+        width: 85%;
+        h1 {
+            font-size: 2rem;
+        }
+        p {
+            font-size: 1.1rem;
+        }
+        .about_bio_pdf {
+            top: 40px;
+            i {
+                font-size: 70px;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 680px) {
+    .about_bio {
+        width: 85%;
+        padding-top: 6vh;
+        padding-bottom: 70px;
+        h1 {
+            font-size: 2rem;
+            // text-align: left;
+        }
+        p {
+            font-size: 1.1rem;
+        }
+        .about_bio_pdf {
+            top: auto;
+            bottom: 20px!important;
+            i {
+                font-size: 60px;
+            }
         }
     }
 }

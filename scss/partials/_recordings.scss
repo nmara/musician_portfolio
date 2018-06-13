@@ -15,7 +15,7 @@
     text-transform: uppercase;
     font-weight: bold;
     text-align: center;
-    padding-top: 120px;
+    padding-top: 10vh;
     flex-grow: 1;
     letter-spacing: 2px;
     h2 {
@@ -46,8 +46,8 @@
     background-image: url("../images/recordings.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: right;
-    height: 100vh;
+    background-position: center;
+    height: calc(100vh - 80px);
     width: 35vw;
 }
 

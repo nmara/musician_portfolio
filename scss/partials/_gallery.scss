@@ -67,7 +67,7 @@
         }
 
         .description_content {
-            z-index: 22;
+            z-index: 2;
             position: absolute;
             color: #fff;
             text-transform: uppercase;
@@ -80,8 +80,11 @@
             flex-direction: column;
             p {
                 font-size: 14px;
+                padding-top: 0.5vh;
             }
             p.title {
+                padding-top: 0;
+                padding-bottom: 0.5vh;
                 border-bottom: 0.25px solid #ffaa00; //może za dużo żółtego i bez?
                 text-align: center;
             }
@@ -96,7 +99,7 @@
 .modal {
     display: none;
     position: fixed;
-    z-index: 1;
+    z-index: 10;
     left: 0;
     top: 0;
     width: 100%;
@@ -117,6 +120,7 @@
     max-height: 100vh;
     max-width: 90vw;
     border: 1px solid #363636;
+    z-index: 3;
 }
 
 .description {
@@ -211,10 +215,30 @@ img {
     justify-content: center;
     align-items: center;
     p {
+        padding-bottom: 0.5vh;
         border-bottom: 0.25px solid #ffaa00;
     }
 }
-
+@media only screen and (max-width: 1100px) {
+    .gallery_content_row {
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 20px 20px;
+        justify-content: center;
+        padding: 60px 0;
+    }
+}
+@media only screen and (max-width: 870px) {
+    .gallery_content_row {
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 20px 20px;
+        justify-content: center;
+        padding: 60px 0;
+    }
+}
 @media only screen and (max-width: 600px) {
     .gallery_content_row {
         display: flex;
