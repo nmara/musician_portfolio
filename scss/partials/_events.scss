@@ -4,7 +4,6 @@
 }
 
 .events_header {
-    margin-top: 50px;
     padding-top: 60px;
     text-align: center;
     color: #fff;
@@ -15,94 +14,9 @@
     }
 }
 
-.future-events {
-    padding: 10px;
-    padding-top: 30px;
-    .future-events_single {
-        background-color: white;
-        color: #262626;
-        width: 1000px;
-        height: 25vh;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        margin: 0 auto 10px auto;
-        .medium {
-            width: 77%;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            .future-events_single_date {
-                text-transform: uppercase;
-                width: 30%;
-                margin-left: 3vw;
-                p {
-                    font-size: 19px;
-                }
-            }
-            .future-events_single_title {
-                text-transform: uppercase;
-                width: 70%;
-                p {
-                    font-size: 19px;
-                    padding: 0 20px;
-                }
-                .bold {
-                    font-weight: 700;
-                }
-            }
-        }
-        .future-events_single_place {
-            width: 22.5%;
-            .future-events_single_place_button {
-                background-color: rgb(255,170,0);
-                border: 1px solid rgb(255,170,0);
-                width: 140px;
-                height: 30px;
-                a {
-                    text-decoration: none;
-                    font-weight: 700;
-                    color: #fff;
-                    font-size: 19px;
-                    padding: 2px 16px;
-                }
-            }
-        }
-    }
-}
-
 .past-events {
     padding-bottom: 70px;
-    padding: 10px;
     padding-top: 70px;
-    .past-events_header {
-        text-transform: uppercase;
-        text-align: center;
-        padding: 20px 0 50px;;
-        letter-spacing: 2px;
-        color: #fff;
-        h2 {
-            font-size: 40px;
-        }
-    }
-
-    .past-events_header_year {
-        background-color: rgb(255,170,0);
-        width: 80px;
-        height: 50px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0;
-        color: #fff;
-        position: absolute;
-        top: -50px;
-        left: 0;
-        span {
-            font-size: 19px;
-        }
-    }
-
     .past-events_single {
         background-color: #ffaa00;
         color: #262626;
@@ -243,160 +157,45 @@
     }
 }
 @media only screen and (max-width: 1300px) {
-    .future-events {
-        padding: 10px;
-        padding-top: 30px;
-        .future-events_single {
-            background-color: white;
-            color: #262626;
-            width: 800px;
-            height: 25vh;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            margin: 0 auto 10px auto;
-            .medium {
-                width: 77%;
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                .future-events_single_date {
-                    text-transform: uppercase;
-                    width: 30%;
-                    margin-left: 3vw;
-                    p {
-                        font-size: 19px;
-                    }
-                }
-                .future-events_single_title {
-                    text-transform: uppercase;
-                    width: 70%;
-                    p {
-                        font-size: 19px;
-                        padding: 0 20px;
-                    }
-                    .bold {
-                        font-weight: 700;
-                    }
-                }
-            }
-            .future-events_single_place {
-                width: 22.5%;
-                .future-events_single_place_button {
-                    background-color: rgb(255,170,0);
-                    border: 1px solid rgb(255,170,0);
-                    width: 140px;
-                    height: 30px;
-                    a {
-                        text-decoration: none;
-                        font-weight: 700;
-                        color: #fff;
-                        font-size: 19px;
-                        padding: 2px 16px;
-                    }
-                }
-            }
-        }
-    }
     .past-events {
-        padding-bottom: 70px;
-        padding: 10px;
         .past-events_header {
-            text-transform: uppercase;
-            text-align: center;
-            padding: 20px 0 50px;;
-            letter-spacing: 2px;
-            color: #fff;
             h2 {
                 font-size: 40px;
             }
         }
-
-        .past-events_header_year {
-            background-color: rgb(255,170,0);
-            width: 80px;
-            height: 50px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 0;
-            color: #fff;
-            position: absolute;
-            top: -50px;
-            left: 0;
-            span {
-                font-size: 19px;
-            }
-        }
-
         .past-events_single {
-            position: relative;
-            background-color: white;
-            color: #262626;
             width: 75vw;
-            height: 25vh;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin: 0 auto 10px auto;
-            transition: height 0.6s ease;
-            transition-delay: 0.3s;
             .medium {
-                width: 77%;
-                display: flex;
-                flex-direction: row;
-                align-items: center;
                 .past-events_single_date {
-                    text-transform: uppercase;
-                    width: 38%;
-                    margin-left: 3vw;
+                    width: 33%;
                     p {
                         font-size: 20px;
                     }
                 }
                 .past-events_single_title {
-                    text-transform: uppercase;
-                    // width: 60%;
                     p {
                         font-size: 20px;
-                        padding: 0 20px;
                     }
-                    .bold {
-                        font-weight: 700;
+                    .past-event-author {
+                        font-size: 24px;
+                    }
+                    .past-event-title {
+                        font-size: 28px;
+                    }
+                    .past-event-city {
+                        font-size: 18px;
                     }
                     .delay {
-                        color: #fff;
-                        visibility: hidden;
-                        opacity: 0;
-                        transition: visibility 1s, opacity 1s ease-in-out;
-                        transition-delay: 0.5s;
                         p {
-                            font-size: 0.25px;
+                            font-size: 18px;
                         }
                     }
                 }
             }
             .past-events_single_place {
-                width: 23%;
-                height: 100%;
-                background-color: rgb(255,170,0);
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                //flex-direction: column;
-                color: #fff;
                 .past-events_single_place_button {
-                    background-color: rgb(255,170,0);
-                    border: 3px solid #fff;
-                    width: 80%;
-                    cursor: pointer;
                     a {
-                        text-decoration: none;
-                        font-weight: bold;
-                        color: #fff;
                         font-size: 35px;
-                        text-transform: uppercase;
-                        padding: 0;
                         i {
                             font-size: 30px;
                         }
@@ -404,64 +203,61 @@
                 }
             }
         }
-
-        .past-events_single.show-event {
-            // height: 35vh;
+    }
+}
+@media only screen and (max-width: 1290px) {
+    .past-events {
+        .past-events_header {
+            h2 {
+                font-size: 40px;
+            }
+        }
+        .past-events_single {
+            width: 75vw;
             .medium {
+                .past-events_single_date {
+                    width: 38%;
+                    p {
+                        font-size: 18px;
+                    }
+                }
                 .past-events_single_title {
+                    p {
+                        font-size: 20px;
+                    }
+                    .past-event-author {
+                        font-size: 24px;
+                    }
+                    .past-event-title {
+                        font-size: 28px;
+                    }
+                    .past-event-city {
+                        font-size: 18px;
+                    }
                     .delay {
-                        // visibility: visible;
-                        // opacity: 1;
-                        // color: #363636;
-                        // margin-top: 10px;
-                        // border-bottom: 1px solid #363636;
-                        // border-top: 1px solid #363636;
-                        // width: 80%;
-                        // p {
-                        //     font-size: 16px;
-                        // }
-                        // .bold {
-                        //     font-weight: 600;
-                        // }
+                        p {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+            .past-events_single_place {
+                .past-events_single_place_button {
+                    a {
+                        font-size: 35px;
+                        i {
+                            font-size: 30px;
+                        }
                     }
                 }
             }
         }
     }
 }
-@media only screen and (max-width: 900px) {
-    .future-events {
-        .future-events_single {
-            flex-direction: row;
-            width: 70vw;
-            .medium {
-                display: flex;
-                flex-direction: column;
-                width: 50%;
-                padding: 0;
-                margin: 0;
-                .future-events_single_date {
-                    width: 100%;
-                    display: flex;
-                    justify-content: flex-start;
-                    align-items: flex-start;
-                    padding: 0;
-                    margin: 0;
-                }
-                .future-events_single_title {
-                    width: 100%;
-                    p {
-                        padding: 0;
-                        margin: 0;
-                    }
-                }
-            }
-            .future-events_single_place {
-
-            }
-        }
-    }
+@media only screen and (max-width: 990px) {
     .past-events {
+        padding-top: 50px;
+        padding-bottom: 70px;
         .past-events_single {
             flex-direction: row;
             width: 70vw;
@@ -469,10 +265,8 @@
                 display: flex;
                 flex-direction: column;
                 width: 70%;
-                //flex-grow: 4;
-                padding: 0;
                 margin: 0;
-                padding-left: 35px;
+                padding: 3vh 2vw;
                 .past-events_single_date {
                     width: 100%;
                     display: flex;
@@ -483,6 +277,8 @@
                 }
                 .past-events_single_title {
                     width: 100%;
+                    padding-left: 0;
+                    padding-bottom: 0;
                     p {
                         padding: 0;
                         margin: 0;
@@ -491,57 +287,16 @@
             }
             .past-events_single_place {
                 width: 30%;
-                //flex-grow: 1;
-            }
-        }
-        .past-events_single:hover {
-            height: 40vh;
-            .past-events_single_place {
-                height: 100%;
-                background-color: #ffaa00;
             }
         }
     }
 }
 @media only screen and (max-width: 680px) {
-    .future-events {
-        .future-events_single {
-            flex-direction: column;
-            align-items: flex-start;
-            height: auto;
-            padding: 20px 20px;
-            .medium {
-                display: flex;
-                flex-direction: column;
-                width: 100%;
-                padding: 0;
-                margin: 0;
-                .future-events_single_date {
-                    width: 100%;
-                    display: flex;
-                    justify-content: flex-start;
-                    align-items: center;
-                    padding: 0;
-                    margin: 0;
-                    margin-bottom: 8px;
-                }
-                .future-events_single_title {
-                    width: 100%;
-                    padding: 0;
-                    margin: 0;
-                    margin-bottom: 8px;
-                    p {
-                        padding: 0;
-                        margin: 0;
-                    }
-                }
-            }
-            .future-events_single_place {
-
-            }
-        }
+    .events_header {
+        padding-top: 40px;
     }
     .past-events {
+        padding-bottom: 25px;
         .past-events_header {
             padding-bottom: 65px;
             h2 {
@@ -553,6 +308,7 @@
             align-items: flex-start;
             height: 100%;
             padding: 20px 20px;
+            background-color: #fff;
             .medium {
                 display: flex;
                 flex-direction: column;
@@ -561,9 +317,7 @@
                 margin: 0;
                 .past-events_single_date {
                     width: 100%;
-                    display: flex;
                     justify-content: flex-start;
-                    align-items: center;
                     padding: 0;
                     margin: 0;
                     margin-bottom: 8px;
@@ -585,33 +339,59 @@
                 display: flex;
                 justify-content: flex-start;
                 .past-events_single_place_button {
-                    width: 140px;
+                    // width: 140px;
+                    width: 70%;
                     border: 0px;
                 }
             }
         }
-        .past-events_single:hover {
-            height: auto;
-            /*
+    }
+}
+@media only screen and (max-width: 360px) {
+    .past-events {
+        .past-events_header {
+            h2 {
+                font-size: 40px;
+            }
+        }
+        .past-events_single {
             .medium {
+                .past-events_single_date {
+                    p {
+                        font-size: 16px;
+                        margin-bottom: 2vh;
+                    }
+                }
                 .past-events_single_title {
+                    p {
+                        font-size: 18px;
+                    }
+                    .past-event-author {
+                        font-size: 20px;
+                    }
+                    .past-event-title {
+                        font-size: 24px;
+                    }
+                    .past-event-city {
+                        font-size: 18px;
+                    }
                     .delay {
-                        visibility: visible;
-                        opacity: 1;
-                        color: #363636;
-                        margin-top: 10px;
-                        border-bottom: 1px solid #363636;
-                        border-top: 1px solid #363636;
-                        width: 70%;
                         p {
                             font-size: 16px;
                         }
-                        .bold {
-                            font-weight: 600;
+                    }
+                }
+            }
+            .past-events_single_place {
+                .past-events_single_place_button {
+                    a {
+                        font-size: 35px;
+                        i {
+                            font-size: 30px;
                         }
                     }
                 }
-            } */
+            }
         }
     }
 }
