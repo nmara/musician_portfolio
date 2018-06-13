@@ -51,8 +51,29 @@
     width: 35vw;
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 1050px) {
     .recordings_main_photo {
         display: none;
+    }
+    .recordings_main_content {
+        width: 80vw;
+        padding-bottom: 6vh;
+    }
+    .recordings_main_content_head {
+        padding-top: 6vh;
+        padding-bottom: 8vh;
+    }
+    .recordings_main_content_audio_audioFile {
+        padding-bottom: 30px;
+        audio {
+            width: 100%;
+        }
+    }
+    .recordings_main_content_audio {
+        flex-grow: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 80%;
     }
 }
